@@ -8,17 +8,30 @@ postgres:
     volumes:
       - /tmp/odoo/postgres:/var/lib/postgresql/data
 
+# elicocorp-odoo:
+#     image: elicocorp/odoo:12.0
+#     command: start
+#     ports:
+#       - 8069:8069
+#     links:
+#       - postgres:db
+#     environment:
+#       - ODOO_DB_USER=odoo
+#       - ODOO_DB_PASSWORD=odoo
+#       - ODOO_ADMIN_PASSWD=admin
+#     volumes:
+#       - /tmp/odoo/filestore:/opt/odoo/data/filestore
+#       - /tmp/odoo/sessions:/opt/odoo/data/sessions
+
 odoo:
-    image: elicocorp/odoo:12.0
-    command: start
+    image: odoo:12.0
     ports:
       - 8069:8069
     links:
       - postgres:db
     environment:
-      - ODOO_DB_USER=odoo
-      - ODOO_DB_PASSWORD=odoo
-      - ODOO_ADMIN_PASSWD=admin
+      - HOST=db
+      - USER=odoo
+      - PASSWORD=odoo
     volumes:
-      - /tmp/odoo/filestore:/opt/odoo/data/filestore
-      - /tmp/odoo/sessions:/opt/odoo/data/sessions
+      - /tmp/odoo/data:/var/lib/odoo

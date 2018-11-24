@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//odoo/__init__.py=utf-8
+encoding//odoo/api.py=utf-8
+encoding//odoo/cli/server.py=utf-8
+encoding//odoo/cli/start.py=utf-8
+encoding//odoo/http.py=utf-8
+encoding//odoo/loglevels.py=utf-8
+encoding//odoo/service/db.py=utf-8
+encoding//odoo/sql_db.py=utf-8
+encoding/setup.py=utf-8
