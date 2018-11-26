@@ -34,4 +34,4 @@ odoo:
       - USER=odoo
       - PASSWORD=odoo
     volumes:
-      - /tmp/odoo/data:/var/lib/odoo
+      - /tmp/odoo:/var/lib/odoo
