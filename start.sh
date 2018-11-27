@@ -1,0 +1,1 @@
+./odoo-bin -d odoo-study --db_port 5433 --log-sql
