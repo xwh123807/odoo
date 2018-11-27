@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+qingjia_qingjd all,请假单,model_qingjia_qingjd,,1,1,1,1
