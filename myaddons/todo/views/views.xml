@@ -1,0 +1,77 @@
+<odoo>
+	<data>
+		<!-- explicit list view definition -->
+		<record model="ir.ui.view" id="todo_task_form">
+			<field name="name">To-do Task Form</field>
+			<field name="model">todo.task</field>
+			<field name="arch" type="xml">
+				<form>
+					<header>
+						<button name="do_toggle_done" type="object"
+							string="Toggle Done" class="oe_highlight" />
+						<button name="do_clear_done" type="object"
+							string="Clear All Done" />
+					</header>
+					<sheet>
+						<group name="group_top">
+							<group name="group_left">
+								<field name="name" />
+							</group>
+							<group name="group_right">
+								<field name="is_done" />
+								<field name="active" readonly="1" />
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="todo_task_tree">
+			<field name="name">To-do Task Tree</field>
+			<field name="model">todo.task</field>
+			<field name="arch" type="xml">
+				<tree colors="gray:is_done==True">
+					<field name="name" />
+					<field name="is_done" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="todo_task_search">
+			<field name="name">To-do Task Search</field>
+			<field name="model">todo.task</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="name" />
+					<filter string="Not None" domain="[('is_done', '=', False)]" />
+					<filter string="Done" domain="[('is_done','!=', False)]" />
+				</search>
+			</field>
+		</record>
+
+		<!-- actions opening views on models -->
+		<record model="ir.actions.act_window"
+			id="todo_task_action_window">
+			<field name="name">To-do Task</field>
+			<field name="res_model">todo.task</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<!-- server action to the one above -->
+		<!-- <record model="ir.actions.server" id="todo.action_server"> <field 
+			name="name">todo server</field> <field name="model_id" ref="model_todo_todo"/> 
+			<field name="state">code</field> <field name="code"> action = { "type": "ir.actions.act_window", 
+			"view_mode": "tree,form", "res_model": self._name, } </field> </record> -->
+
+		<!-- Top menu item -->
+		<menuitem name="To-Do" id="todo_menu_root" />
+		<!-- menu categories -->
+		<menuitem name="Tasks" id="todo_task_menu_1"
+			parent="todo_menu_root" action="todo_task_action_window" />
+		<!-- <menuitem name="Menu 2" id="todo.menu_2" parent="todo.menu_root"/> -->
+		<!-- actions -->
+		<!-- <menuitem name="List" id="todo.menu_1_list" parent="todo.menu_1" action="todo.action_window"/> 
+			<menuitem name="Server to list" id="todo" parent="todo.menu_2" action="todo.action_server"/> -->
+	</data>
+</odoo>
