@@ -1,8 +1,8 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <record model="ir.ui.view" id="qingjia_list">
-      <field name="name">请假单</field>
+    <record model="ir.ui.view" id="qingjia_qingjd_list">
+      <field name="name">请假单-列表</field>
       <field name="model">qingjia.qingjd</field>
       <field name="arch" type="xml">
         <tree>
@@ -10,6 +10,27 @@
           <field name="startdate"/>
           <field name="days"/>
         </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="qingjia_qingjd_form">
+      <field name="name">请假单-form</field>
+      <field name="model">qingjia.qingjd</field>
+      <field name="arch" type="xml">
+        <form>
+        	<header>
+        		<button name="send_qingjd" type="object" string="发送" class="oe_highlight"></button>
+        		<button name="confirm_qjd" type="object" string="确认"></button>
+        	</header>
+       		<sheet>
+       			<group name="group_top" string="请假单">
+		          <field name="name"/>
+		          <field name="days"/>
+		          <field name="startdate"/>
+		          <field name="reason"/>
+	          </group>
+          </sheet>
+        </form>
       </field>
     </record>
 
