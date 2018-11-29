@@ -44,8 +44,8 @@
 			<field name="arch" type="xml">
 				<search>
 					<field name="name" />
-					<filter string="Not None" domain="[('is_done', '=', False)]" />
-					<filter string="Done" domain="[('is_done','!=', False)]" />
+					<filter string="Not None" name="none" domain="[('is_done', '=', False)]" />
+					<filter string="Done" name="done" domain="[('is_done','!=', False)]" />
 				</search>
 			</field>
 		</record>

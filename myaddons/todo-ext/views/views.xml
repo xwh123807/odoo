@@ -1,0 +1,64 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="view_form_todo_task_inherited">
+      <field name="name">Todo Task Form - Use extension </field>
+      <field name="model">todo.task</field>
+      <field name="inherit_id" ref="todo.todo_task_form"/>
+      <field name="arch" type="xml">
+          <field name="name" position="after">
+          	<field name="user_id"/>
+          </field>
+          <field name="is_done" position="before">
+          	<field name="date_deadline"/>
+          </field>
+          <field name="name" position="attributes">
+          	<attribute name="string">I have to ...</attribute>
+          	<attribute name="insivible">1</attribute>
+          </field>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="todo-ext.action_window">
+      <field name="name">todo-ext window</field>
+      <field name="res_model">todo-ext.todo-ext</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="todo-ext.action_server">
+      <field name="name">todo-ext server</field>
+      <field name="model_id" ref="model_todo-ext_todo-ext"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="todo-ext" id="todo-ext.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="todo-ext.menu_1" parent="todo-ext.menu_root"/>
+    <menuitem name="Menu 2" id="todo-ext.menu_2" parent="todo-ext.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="todo-ext.menu_1_list" parent="todo-ext.menu_1"
+              action="todo-ext.action_window"/>
+    <menuitem name="Server to list" id="todo-ext" parent="todo-ext.menu_2"
+              action="todo-ext.action_server"/>
+    -->
+  </data>
+</odoo>
