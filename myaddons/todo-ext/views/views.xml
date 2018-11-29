@@ -16,6 +16,36 @@
           	<attribute name="string">I have to ...</attribute>
           	<attribute name="insivible">1</attribute>
           </field>
+          <sheet position="after">
+          	<div class="oe_chatter">
+          		<!-- <field name="message_follower_ids" widget="mail_followers"/>
+          		<field name="message_ids" widget="mail_thread" /> -->
+          	</div>
+          </sheet>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="view_tree_todo_task_inherited">
+      <field name="name">Todo Task Tree - Use extension </field>
+      <field name="model">todo.task</field>
+      <field name="inherit_id" ref="todo.todo_task_tree"/>
+      <field name="arch" type="xml">
+      	<field name="name" position="after">
+      		<field name="user_id"/>
+      	</field>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="view_search_todo_task_inherited">
+      <field name="name">Todo Task Search - Use extension </field>
+      <field name="model">todo.task</field>
+      <field name="inherit_id" ref="todo.todo_task_search"/>
+      <field name="arch" type="xml">
+      	<field name="name" position="after">
+      		<field name="user_id"/>
+      		<filter name="filter_my_tasks" string="My Tasks" domain="[('user_id','=',[uid, False])]" />
+      		<filter name="filter_not_assigned" string="Not Assigned" domain="[('user_id','=', False)]" />
+      	</field>
       </field>
     </record>
 
