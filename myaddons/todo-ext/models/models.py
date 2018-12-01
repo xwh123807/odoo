@@ -4,8 +4,6 @@ from odoo import models, fields, api
 
 
 class TodoTask(models.Model):
-#     _name = 'todo.task'
-#     _inherits = ['todo.task', 'mail.thread']
     _inherit = 'todo.task'
     
     user_id = fields.Many2one('res.users', string='Responsible')

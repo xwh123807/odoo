@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="todo-share.list">
+      <field name="name">todo-share list</field>
+      <field name="model">todo-share.todo-share</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="todo-share.action_window">
+      <field name="name">todo-share window</field>
+      <field name="res_model">todo-share.todo-share</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="todo-share.action_server">
+      <field name="name">todo-share server</field>
+      <field name="model_id" ref="model_todo-share_todo-share"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="todo-share" id="todo-share.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="todo-share.menu_1" parent="todo-share.menu_root"/>
+    <menuitem name="Menu 2" id="todo-share.menu_2" parent="todo-share.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="todo-share.menu_1_list" parent="todo-share.menu_1"
+              action="todo-share.action_window"/>
+    <menuitem name="Server to list" id="todo-share" parent="todo-share.menu_2"
+              action="todo-share.action_server"/>
+    -->
+  </data>
+</odoo>
