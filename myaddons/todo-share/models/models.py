@@ -2,14 +2,6 @@
 
 from odoo import models, fields, api
 
-# class todo-share(models.Model):
-#     _name = 'todo-share.todo-share'
-
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         self.value2 = float(self.value) / 100
+class TodoTask(models.Model):
+     _name = 'todo.task'
+     _inherit = ['todo.task', 'mail.thread']
