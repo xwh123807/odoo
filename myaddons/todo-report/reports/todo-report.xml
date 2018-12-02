@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<odoo>
+	<data>
+		<report id="action_todo_task_report" string="ToDo Tasks"
+			model="todo.task" report_type="qweb-pdf"
+			name="todo-report.report_todo_task_template" />
+
+		<template id="report_todo_task_template">
+			<t t-call="web.html_container">
+				<t t-call="web.external_layout">
+					<div class="page">
+						<h1>hello</h1>
+					</div>
+				</t>
+			</t>
+		</template>
+	</data>
+</odoo>

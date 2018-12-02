@@ -1,22 +1,50 @@
 <odoo>
-    <data>
-        <!-- <template id="listing"> -->
-        <!--   <ul> -->
-        <!--     <li t-foreach="objects" t-as="object"> -->
-        <!--       <a t-attf-href="#{ root }/objects/#{ object.id }"> -->
-        <!--         <t t-esc="object.display_name"/> -->
-        <!--       </a> -->
-        <!--     </li> -->
-        <!--   </ul> -->
-        <!-- </template> -->
-        <!-- <template id="object"> -->
-        <!--   <h1><t t-esc="object.display_name"/></h1> -->
-        <!--   <dl> -->
-        <!--     <t t-foreach="object._fields" t-as="field"> -->
-        <!--       <dt><t t-esc="field"/></dt> -->
-        <!--       <dd><t t-esc="object[field]"/></dd> -->
-        <!--     </t> -->
-        <!--   </dl> -->
-        <!-- </template> -->
-    </data>
+	<data>
+		<template id="hello">
+			<h1>Hello World!</h1>
+		</template>
+		<template id="listing">
+			<ul>
+				<li t-foreach="objects" t-as="object">
+					<a t-attf-href="#{ root }/objects/#{ object.id }">
+						<t t-esc="object.display_name" />
+					</a>
+				</li>
+			</ul>
+		</template>
+		<template id="object">
+			<h1>
+				<t t-esc="object.display_name" />
+			</h1>
+			<dl>
+				<t t-foreach="object._fields" t-as="field">
+					<dt>
+						<t t-esc="field" />
+					</dt>
+					<dd>
+						<t t-esc="object[field]" />
+					</dd>
+				</t>
+			</dl>
+		</template>
+		
+		<template id="index" name="Todo List">
+			<t t-call="web.layout">
+				<div id="wrap" class="container">
+					<h1>Todo Tasks</h1>
+					<t t-foreach="tasks" t-as="task">
+						<div class="row">
+							<input type="checkbox" disabled="True" />
+							<a t-attr-href="/todo/task.id">
+								<span t-field="task.name" t-attr-class="'todo-app-done' if task.is_done else ''"/>
+							</a>
+						</div>
+					</t>
+					<div class="row">
+						<a href="/todo/add" class="btn btn-primary btn-lg">Add</a>
+					</div>
+				</div>
+			</t>
+		</template>
+	</data>
 </odoo>

@@ -9,6 +9,7 @@ class TodoTask(models.Model):
     user_id = fields.Many2one('res.users', string='Responsible')
     date_deadline = fields.Date(string='Deadline')
     name = fields.Char(help='Can I help you')
+    days = fields.Float('days')
     
     @api.multi
     def do_clear_done(self):

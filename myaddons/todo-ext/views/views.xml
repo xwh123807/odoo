@@ -11,6 +11,7 @@
           </field>
           <field name="is_done" position="before">
           	<field name="date_deadline"/>
+          	<field name="days"/>
           </field>
           <field name="name" position="attributes">
           	<attribute name="string">I have to ...</attribute>
@@ -26,6 +27,7 @@
       <field name="arch" type="xml">
       	<field name="name" position="after">
       		<field name="user_id"/>
+      		<field name="days"/>
       	</field>
       </field>
     </record>
