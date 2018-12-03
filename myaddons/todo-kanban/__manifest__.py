@@ -3,8 +3,8 @@
     'name': "todo-kanban",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        扩展todo-ext，实现看板视图、日历视图、透视图、图形视图
+    """,
 
     'description': """
         Long description of module's purpose

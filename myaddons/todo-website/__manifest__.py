@@ -3,8 +3,8 @@
     'name': "todo-website",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        扩展todo-kanban，实现website
+    """,
 
     'description': """
         Long description of module's purpose

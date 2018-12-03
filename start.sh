@@ -1,1 +1,1 @@
-./odoo-bin -d odoo-study --db_port 5433 --log-sql --addons-path=addons,myaddons
+./odoo-bin -d odoo-study --db_port 5432 --log-sql --addons-path=addons,myaddons

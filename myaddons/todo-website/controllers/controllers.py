@@ -3,7 +3,7 @@ from odoo import http
 from myaddons.todo.models.models import TodoTask
 
 class TodoWebsite(http.Controller):
-     @http.route('/todo-website/hello', auth='public')
+     @http.route('/hello', auth='public')
      def index(self, **kw):
          return http.request.render('todo-website.hello')
      
