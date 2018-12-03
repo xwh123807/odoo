@@ -39,7 +39,9 @@ except Exception:
 
 
 def _get_wkhtmltopdf_bin():
-    return find_in_path('wkhtmltopdf')
+#    todo xwh
+    return "/usr/local/bin/wkhtmltopdf"
+#     return find_in_path('wkhtmltopdf')
 
 
 # Check the presence of Wkhtmltopdf and return its version at Odoo start-up

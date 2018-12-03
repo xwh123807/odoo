@@ -10,6 +10,9 @@
 				<t t-call="web.external_layout">
 					<div class="page">
 						<h1>hello</h1>
+						<t t-foreach="docs" t-as="doc">
+							<p><span t-field="doc.name"/></p>
+						</t>
 					</div>
 				</t>
 			</t>
