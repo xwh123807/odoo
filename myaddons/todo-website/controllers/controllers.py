@@ -5,7 +5,7 @@ from myaddons.todo.models.models import TodoTask
 class TodoWebsite(http.Controller):
      @http.route('/hello', auth='public')
      def index(self, **kw):
-         return http.request.render('todo-website.hello')
+        return http.request.render('todo-website.hello')
      
      @http.route('/todo-website/todo-website/objects/', auth='public')
      def list(self, **kw):
@@ -22,7 +22,11 @@ class TodoWebsite(http.Controller):
          })
          
      @http.route('/todo', auth='public', website=True)
-     def index(self, **kwargs):
+     def indexTodo(self, **kwargs):
         TodoTask = http.request.env['todo.task']
         tasks = TodoTask.search([])
         return http.request.render('todo-website.index', {'tasks': tasks})
+    
+     @http.route('/test', auth='public')
+     def test(self, **kwargs):
+        return "test"
