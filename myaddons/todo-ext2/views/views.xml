@@ -1,19 +1,16 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <!--
-    <record model="ir.ui.view" id="todo-ext2.list">
-      <field name="name">todo-ext2 list</field>
-      <field name="model">todo-ext2.todo-ext2</field>
+    <record model="ir.ui.view" id="view_form_todo_task_ext2_inherited">
+      <field name="name">Todo Task Form - Use extension </field>
+      <field name="model">todo.task</field>
+      <field name="inherit_id" ref="todo.todo_task_form"/>
       <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
+          <xpath expr="//header" position="inside">
+          	<widget name="attach_document" string="Attach Document" action="message_post"/>
+          </xpath>
       </field>
     </record>
-    -->
 
     <!-- actions opening views on models -->
     <!--
