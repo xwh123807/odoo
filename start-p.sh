@@ -1,0 +1,1 @@
+./odoo-bin -d odoo-study --db_host localhost --db_port 5432 --db_user odoo --db_password odoo  --addons-path=addons,myaddons
