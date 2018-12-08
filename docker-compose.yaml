@@ -6,7 +6,7 @@ postgres:
     ports:
       - 5432:5432
     volumes:
-      - /tmp/odoo/postgres:/var/lib/postgresql/data
+      - /xwh.work/odoo/postgres:/var/lib/postgresql/data
 
 # elicocorp-odoo:
 #     image: elicocorp/odoo:12.0
@@ -20,8 +20,8 @@ postgres:
 #       - ODOO_DB_PASSWORD=odoo
 #       - ODOO_ADMIN_PASSWD=admin
 #     volumes:
-#       - /tmp/odoo/filestore:/opt/odoo/data/filestore
-#       - /tmp/odoo/sessions:/opt/odoo/data/sessions
+#       - /xwh.work/odoo/filestore:/opt/odoo/data/filestore
+#       - /xwh.work/odoo/sessions:/opt/odoo/data/sessions
 
 #odoo:
 #    image: odoo:12.0
@@ -34,4 +34,4 @@ postgres:
 #      - USER=odoo
 #      - PASSWORD=odoo
 #    volumes:
-#      - /tmp/odoo:/var/lib/odoo
+#      - /xwh.work/odoo:/var/lib/odoo

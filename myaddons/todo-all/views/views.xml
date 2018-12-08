@@ -1,0 +1,187 @@
+<odoo>
+	<data>
+		<record model="ir.ui.view" id="view_form_todo_task_inherited">
+			<field name="name">Todo Task Form - Use extension </field>
+			<field name="model">todo.task</field>
+			<field name="inherit_id" ref="todo.todo_task_form" />
+			<field name="arch" type="xml">
+				<field name="name" position="after">
+					<field name="user_id" />
+				</field>
+				<field name="is_done" position="before">
+					<field name="date_deadline" />
+					<field name="days" />
+				</field>
+				<field name="name" position="attributes">
+					<attribute name="string">I have to ...</attribute>
+					<attribute name="insivible">1</attribute>
+				</field>
+				<field name="active" position="after">
+					<field name="priority" />
+					<field name="kanban_state" />
+					<field name="color" widget="colorpicker" />
+				</field>
+				<sheet position="after">
+					<div class="oe_chatter">
+						<field name="message_follower_ids" widget="mail_followers" />
+						<field name="message_ids" widget="mail_thread" />
+					</div>
+				</sheet>
+				<header position="inside">
+					<widget name="attach_document" string="Attach Document"
+						action="message_post" />
+					<button name="action_report_send" string="Send Report" type="object"/>
+				</header>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="view_tree_todo_task_inherited">
+			<field name="name">Todo Task Tree - Use extension </field>
+			<field name="model">todo.task</field>
+			<field name="inherit_id" ref="todo.todo_task_tree" />
+			<field name="arch" type="xml">
+				<field name="name" position="after">
+					<field name="user_id" />
+					<field name="days" />
+				</field>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="view_search_todo_task_inherited">
+			<field name="name">Todo Task Search - Use extension </field>
+			<field name="model">todo.task</field>
+			<field name="inherit_id" ref="todo.todo_task_search" />
+			<field name="arch" type="xml">
+				<field name="name" position="after">
+					<field name="user_id" />
+					<filter name="filter_my_tasks" string="My Tasks"
+						domain="[('user_id','=',[uid, False])]" />
+					<filter name="filter_not_assigned" string="Not Assigned"
+						domain="[('user_id','=', False)]" />
+				</field>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="todo_task_kanban">
+			<field name="name">todo-task kanban</field>
+			<field name="model">todo.task</field>
+			<field name="arch" type="xml">
+				<kanban default_group_by="kanban_state"
+					default_order="kanban_state">
+					<field name="kanban_state" />
+					<field name="is_done" />
+					<field name="name" />
+					<field name="user_id" />
+					<field name="color" />
+					<field name="date_deadline" />
+					<field name="priority" />
+					<templates>
+						<t t-name="kanban-box">
+							<div>
+								<div class="o_dropdown_kanban dropdown">
+									<a class="dropdown-toggle btn" data-toggle="dropdown"
+										href="#">
+										<span class="fa fa-bars fa-lg" />
+									</a>
+									<ul class="dropdown-menu" role="menu"
+										aria-labelledby="dLabel">
+										<t t-if="widget.editable">
+											<li>
+												<a type="edit">Edit</a>
+											</li>
+										</t>
+										<t t-if="widget.editable">
+											<li>
+												<a type="delete">Delete</a>
+											</li>
+										</t>
+										<t t-if="!record.is_done.value">
+											<li>
+												<a name="do_toggle_done" type="object">Set a Done</a>
+											</li>
+										</t>
+										<li>
+											<ul class="oe_kanban_colorpicker" data-field="color" />
+										</li>
+									</ul>
+								</div>
+								<div class="oe_kanban_content">
+									<div>
+										<!-- <field name="tag_ids"/> -->
+									</div>
+									<div>
+										<strong>
+											<a type="open">
+												<field name="name" />
+											</a>
+										</strong>
+									</div>
+									<ul>
+										<li>
+											<field name="user_id" />
+										</li>
+										<li>
+											<field name="date_deadline" />
+										</li>
+									</ul>
+									<div class="oe_kanban_footer">
+										<div>
+											<field name="priority" widget="priority" />
+										</div>
+										<div>
+											<field name="kanban_state"
+												widget="kanban_state_selection" />
+											<img
+												t-att-src="kanban_image('res.users','image_small',record.user_id.raw_value)"
+												width="24" height="24" class="oe_kanban_avatar pull_right" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</t>
+					</templates>
+				</kanban>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="todo_task_calendar">
+			<field name="name">todo-task calendar</field>
+			<field name="model">todo.task</field>
+			<field name="arch" type="xml">
+				<calendar string="Todo Task" date_start="date_deadline"
+					color="color">
+					<field name="name" />
+					<field name="user_id" />
+				</calendar>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="todo_task_pivot">
+			<field name="name">todo-task Pivot</field>
+			<field name="model">todo.task</field>
+			<field name="arch" type="xml">
+				<pivot string="Todo Tasks Analysis" disable_linking="True">
+					<field name="date_deadline" interval="month" type="row" />
+					<field name="kanban_state" type="col" />
+					<field name="days" type="measure" />
+				</pivot>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="todo_task_graph">
+			<field name="name">todo-task Graph</field>
+			<field name="model">todo.task</field>
+			<field name="arch" type="xml">
+				<graph string="Todo Tasks">
+					<field name="priority" type="col" />
+					<field name="kanban_state" type="row" />
+					<field name="days" type="measure" />
+				</graph>
+			</field>
+		</record>
+
+		<act_window id="todo.todo_task_action_window"
+			name="To-Do Tasks" res_model="todo.task"
+			view_mode="kanban,tree,form,calendar,pivot,graph" />
+	</data>
+</odoo>
