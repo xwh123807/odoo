@@ -8,12 +8,41 @@
 		<template id="report_todo_task_template">
 			<t t-call="web.html_container">
 				<t t-call="web.external_layout">
-					<div class="page">
-						<h1>hello</h1>
+					<t t-foreach="docs" t-as="doc">
+						<div class="page">
+							<table class="table table-bordered mb64">
+								<tr>
+									<td>Name</td>
+									<td>
+										<span t-field="doc.name" />
+									</td>
+								</tr>
+							</table>
+						</div>
+					</t>
+				</t>
+			</t>
+		</template>
+
+		<report id="action_todo_task_list_report"
+			string="ToDo Tasks List" model="todo.task" report_type="qweb-pdf"
+			name="todo-all.report_todo_task_list_template" />
+
+		<template id="report_todo_task_list_template">
+			<t t-call="web.html_container">
+				<t t-call="web.external_layout">
+					<table class="table table-bordered mb64">
+						<tr>
+							<td>Name</td>
+						</tr>
 						<t t-foreach="docs" t-as="doc">
-							<p><span t-field="doc.name"/></p>
+							<tr>
+								<td>
+									<span t-field="doc.name" />
+								</td>
+							</tr>
 						</t>
-					</div>
+					</table>
 				</t>
 			</t>
 		</template>
