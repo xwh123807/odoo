@@ -1,33 +1,31 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "todo-all",
+    'name': "install-my",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
-
-    'description': """
-        Long description of module's purpose
+        定制安装项目
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'description': """
+        定制安装项目
+    """,
+
+    'author': "xwh",
+    'website': "http://www.xwh.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'xwh',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','mail','todo'],
+    'depends': ['mail', 'crm', 'project', 'account', 'sale_management', 'note', 'purchase',
+                'hr', 'hr_expense', 'board', 'stock', 'mrp', 'hr_attendance', 'hr_recruitment',
+                'hr_holidays', 'survey', 'lunch', 'maintenance', 'fleet', 'repair'],
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        'reports/todo-report.xml',
-        'views/views.xml',
-        'views/templates.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
