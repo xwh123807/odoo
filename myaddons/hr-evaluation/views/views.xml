@@ -1,0 +1,188 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="hr_evaluation_level">
+      <field name="name">Level</field>
+      <field name="model">hr.level</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="hr_evaluation_post">
+      <field name="name">Level</field>
+      <field name="model">hr.post</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="hr_evaluation_postlevel">
+      <field name="name">Post Level</field>
+      <field name="model">hr.postlevel</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="level_id"/>
+          <field name="post_id"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="hr_evaluation_skill">
+      <field name="name">Skill</field>
+      <field name="model">hr.skill</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="hr_evaluation_postskill">
+      <field name="name">Post Skill</field>
+      <field name="model">hr.postskill</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="post_id"/>
+          <field name="skill_id"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="hr_evaluation_postcondition">
+      <field name="name">Post Condition</field>
+      <field name="model">hr.postcondition</field>
+      <field name="arch" type="xml">
+        <tree>
+         <!--  <field name="level_id"/> -->
+          <field name="postlevel_id"/>
+          <field name="requirement_condition"/>
+          <field name="standard_condition"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="hr_evaluation_postdesc">
+      <field name="name">Post Qualification</field>
+      <field name="model">hr.postdesc</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="postlevel_id"/>
+          <field name="skill_id"/>
+          <field name="qualification"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="hr_evaluation_skillscore">
+      <field name="name">Skill Score</field>
+      <field name="model">hr.skillscore</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="post_id"/>
+          <field name="skill_id"/>
+          <field name="score"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="hr_evaluation_postscore">
+      <field name="name">Post Score</field>
+      <field name="model">hr.postscore</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="postlevel_id"/>
+          <field name="skill_id"/>
+          <field name="score"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="hr_evaluation_level_action_window">
+      <field name="name">Level</field>
+      <field name="res_model">hr.level</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="hr_evaluation_post_action_window">
+      <field name="name">Post</field>
+      <field name="res_model">hr.post</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="hr_evaluation_postlevel_action_window">
+      <field name="name">Post Level</field>
+      <field name="res_model">hr.postlevel</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="hr_evaluation_skill_action_window">
+      <field name="name">Skill</field>
+      <field name="res_model">hr.skill</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="hr_evaluation_postskill_action_window">
+      <field name="name">Post Skill</field>
+      <field name="res_model">hr.postskill</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="hr_evaluation_postcondition_action_window">
+      <field name="name">Post Condition</field>
+      <field name="res_model">hr.postcondition</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="hr_evaluation_postdesc_action_window">
+      <field name="name">Post Qualification</field>
+      <field name="res_model">hr.postdesc</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="hr_evaluation_skillscore_action_window">
+      <field name="name">Skill Score</field>
+      <field name="res_model">hr.skillscore</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="hr_evaluation_postscore_action_window">
+      <field name="name">Post Score</field>
+      <field name="res_model">hr.postscore</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem name="HR Evaluation" id="hr_evaluation_menu_root"/>
+    <!-- menu categories -->
+    <menuitem name="Framework" id="hr_evaluation_menu_1" parent="hr_evaluation_menu_root"/>
+    <!-- actions -->
+    <menuitem name="Level" id="hr_evaluation_menu_1_list" parent="hr_evaluation_menu_1"
+              action="hr_evaluation_level_action_window"/>
+    <menuitem name="Post" id="hr_evaluation_menu_2_list" parent="hr_evaluation_menu_1"
+              action="hr_evaluation_post_action_window"/>
+    <menuitem name="Post Level" id="hr_evaluation_menu_3_list" parent="hr_evaluation_menu_1"
+              action="hr_evaluation_postlevel_action_window"/>
+    <menuitem name="Skill" id="hr_evaluation_menu_4_list" parent="hr_evaluation_menu_1"
+              action="hr_evaluation_skill_action_window"/>
+    <menuitem name="Post Skill" id="hr_evaluation_menu_5_list" parent="hr_evaluation_menu_1"
+              action="hr_evaluation_postskill_action_window"/>
+    <menuitem name="Post Condition" id="hr_evaluation_menu_6_list" parent="hr_evaluation_menu_1"
+              action="hr_evaluation_postcondition_action_window"/>
+    <menuitem name="Post Qualification" id="hr_evaluation_menu_6_list" parent="hr_evaluation_menu_1"
+              action="hr_evaluation_postdesc_action_window"/>
+    <menuitem name="Skill Score" id="hr_evaluation_menu_7_list" parent="hr_evaluation_menu_1"
+              action="hr_evaluation_skillscore_action_window"/>
+    <menuitem name="Post Score" id="hr_evaluation_menu_8_list" parent="hr_evaluation_menu_1"
+              action="hr_evaluation_postscore_action_window"/>
+  </data>
+</odoo>

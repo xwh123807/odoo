@@ -1,0 +1,495 @@
+<odoo>
+	<data>
+		<record id="p1" model="hr.level">
+			<field name="name">P1</field>
+		</record>
+		<record id="p2" model="hr.level">
+			<field name="name">P2</field>
+		</record>
+		<record id="p3" model="hr.level">
+			<field name="name">P3</field>
+		</record>
+		<record id="p4" model="hr.level">
+			<field name="name">P4</field>
+		</record>
+		<record id="p5" model="hr.level">
+			<field name="name">P5</field>
+		</record>
+		<record id="p6" model="hr.level">
+			<field name="name">P6</field>
+		</record>
+		<record id="p7" model="hr.level">
+			<field name="name">P7</field>
+		</record>
+		<record id="p8" model="hr.level">
+			<field name="name">P8</field>
+		</record>
+
+		<record id="post_dev" model="hr.post">
+			<field name="name">开发工程师</field>
+		</record>
+		<record id="post_test" model="hr.post">
+			<field name="name">测试工程师</field>
+		</record>
+
+		<record id="post_dev_p1" model="hr.postlevel">
+			<field name="name">助理开发工程师</field>
+			<field name="level_id" ref="p1" />
+			<field name="post_id" ref="post_dev" />
+			<field name="description">达到本岗位知识技能的基本要求，能够在他人指导下、按照标准流程和方法完成较明确的专业性任务。
+			</field>
+		</record>
+
+		<record id="post_dev_p2" model="hr.postlevel">
+			<field name="name">初级开发工程师</field>
+			<field name="level_id" ref="p2" />
+			<field name="post_id" ref="post_dev" />
+			<field name="description">掌握本岗位需要的专业知识技能，具备相应的专业工作经验，能够独立完成一般专业性工作。
+			</field>
+		</record>
+
+		<record id="post_dev_p3" model="hr.postlevel">
+			<field name="name">中级开发工程师</field>
+			<field name="level_id" ref="p3" />
+			<field name="post_id" ref="post_dev" />
+			<field name="description">熟练掌握本岗位需要的专业知识技能，能够独立完成复杂的专业性工作。
+			</field>
+		</record>
+
+		<record id="post_dev_p4" model="hr.postlevel">
+			<field name="name">高级开发工程师</field>
+			<field name="level_id" ref="p4" />
+			<field name="post_id" ref="post_dev" />
+			<field name="description">精通本岗位需要的专业知识技能，对复杂难题提出专业解决方案，并可指导他人完成专业性工作或带领团队完成工作任务。
+			</field>
+		</record>
+
+		<record id="post_dev_p5" model="hr.postlevel">
+			<field name="name">资深开发工程师</field>
+			<field name="level_id" ref="p5" />
+			<field name="post_id" ref="post_dev" />
+			<field name="description">精通本岗位相关的多个业务领域的专业知识技能，能够跨组织协同完成公司级关键业务目标，可指导他人完成复杂的专业性难题。
+			</field>
+		</record>
+
+		<record id="post_dev_p6" model="hr.postlevel">
+			<field name="name">专家开发工程师</field>
+			<field name="level_id" ref="p6" />
+			<field name="post_id" ref="post_dev" />
+			<field name="description">为本岗位所在领域的专家，能负责解决影响公司关键业务的难题，为公司做出持续重要贡献。
+			</field>
+		</record>
+
+		<record id="post_dev_p7" model="hr.postlevel">
+			<field name="name">高级专家开发工程师</field>
+			<field name="level_id" ref="p7" />
+			<field name="post_id" ref="post_dev" />
+			<field name="description">为本岗位所在领域的高级专家；能够代表公司在业内传播与分享相关经验。
+			</field>
+		</record>
+
+		<record id="post_dev_p8" model="hr.postlevel">
+			<field name="name">首席开发工程师</field>
+			<field name="level_id" ref="p8" />
+			<field name="post_id" ref="post_dev" />
+			<field name="description">为本岗位所在领域或行业的学科带头人。
+			</field>
+		</record>
+
+		<record id="skill_1" model="hr.skill">
+			<field name="name">产品与业务</field>
+			<field name="description">
+				掌握和本职工作相关的业务理论知识和和实务经验。
+				1、产品知识；
+				2、行业及客户知识；
+				3、业务理论知识；
+				4、公司产品业务领域。
+			</field>
+		</record>
+		<record id="skill_2" model="hr.skill">
+			<field name="name">专业影响力</field>
+			<field name="description">
+				在本岗位所在领域或行业的学科带头人，能够代表公司在业内传播与分享相关经验。
+				1、发表专业著作、论文、专利；
+				2、获得行业协会或政府颁发的奖励、荣誉；
+				3、在专业会议、组织中发表演讲或主持培训。
+			</field>
+		</record>
+		<record id="skill_3" model="hr.skill">
+			<field name="name">用户思维与产品体验</field>
+			<field name="description">
+				站在产品使用者的角度去考虑产品的设计和实现。
+				注重产品的交互方式、使用效率、易用性等，按照以用户为中心的思想打造产品。
+				1、互联网思维；
+				2、数字化的产品运营和营销。
+			</field>
+		</record>
+		<record id="skill_4" model="hr.skill">
+			<field name="name">设计技能</field>
+			<field name="description">
+				掌握将需求分析转换为具体实现的设计能力，包括业务分析能力，业务建模能力等。
+				1、系统分析及建模能力；
+				2、数据结构及算法设计能力；
+				3、设计模式；
+				4、面向对象的设计技术；
+				5、设计经验及成果。
+			</field>
+		</record>
+		<record id="skill_5" model="hr.skill">
+			<field name="name">开发编码</field>
+			<field name="description">
+				掌握与所研发的公司产品相关的开发技术，具备分析和处理开发过程中的问题能力。包括但不限于：
+				1、本岗位所需的开发语言、工具与技能；
+				2、良好的编程风格和编程思维；
+				3、开发经验及成果。
+			</field>
+		</record>
+		<record id="skill_6" model="hr.skill">
+			<field name="name">技术前瞻性和多领域知识</field>
+			<field name="description">
+				使用创新技术、工具、方法解决开发中面临的问题或提升产品研发效率、稳定性、可扩展性等。
+				掌握工作中涉及到其他岗位所需要的技术。
+				1、全栈式的开发人员；
+				2、将业界前沿的技术和思想应用到工作中。
+			</field>
+		</record>
+		<record id="skill_7" model="hr.skill">
+			<field name="name">软件架构与软件工程</field>
+			<field name="description">
+				掌握工作相关架构的运用和软件开发过程规范
+				1、业界主流的架构技术；
+				2、异构系统集成协作；
+				3、研发过程、软件工程和CMMI相关要求。
+			</field>
+		</record>
+		<record id="postskill_1" model="hr.postskill">
+			<field name="post_id" ref="post_dev" />
+			<field name="skill_id" ref="skill_1" />
+		</record>
+		<record id="postskill_2" model="hr.postskill">
+			<field name="post_id" ref="post_dev" />
+			<field name="skill_id" ref="skill_2" />
+		</record>
+		<record id="postskill_3" model="hr.postskill">
+			<field name="post_id" ref="post_dev" />
+			<field name="skill_id" ref="skill_3" />
+		</record>
+		<record id="postskill_4" model="hr.postskill">
+			<field name="post_id" ref="post_dev" />
+			<field name="skill_id" ref="skill_4" />
+		</record>
+		<record id="postskill_5" model="hr.postskill">
+			<field name="post_id" ref="post_dev" />
+			<field name="skill_id" ref="skill_5" />
+		</record>
+		<record id="postskill_6" model="hr.postskill">
+			<field name="post_id" ref="post_dev" />
+			<field name="skill_id" ref="skill_6" />
+		</record>
+		<record id="postskill_7" model="hr.postskill">
+			<field name="post_id" ref="post_dev" />
+			<field name="skill_id" ref="skill_7" />
+		</record>
+
+		<record id="postcondition_1" model="hr.postcondition">
+			<field name="postlevel_id" ref="post_dev_p1" />
+			<field name="requirement_condition">
+				1.专业不限。
+				2.最近两次绩效评价CB及以上
+				3.除Delphi、.Net和移动开发领域的程序员外（由部门出具证明材料），其他领域的开发人员要求通过ECP开发能力L1认证。
+			</field>
+			<field name="standard_condition">
+				1.最近1年内参与过公司产品1个及以上子系统的开发工作或同等规模的平台、组件及其他定制开发工作；提供相关需求的评审记录作为佐证材料。
+				2.最近1年内在指导下完成过工作量相当于3人天的单个功能需求开发任务；提供相关代码清单（含功能代码、测试代码）作为佐证材料。
+				3.近1年来未被通报任何研发黑色事件。
+			</field>
+		</record>
+		<record id="postcondition_2" model="hr.postcondition">
+			<field name="postlevel_id" ref="post_dev_p2" />
+			<field name="requirement_condition">
+				1.专业不限。
+				2.最近两次绩效评价CB及以上
+				3.持有产品与技术委员会办法的“Good Code
+				Auth”和“Good SQL Auth”两项资质认证（对于前端、移动等完全不接触SQL的开发，可以只要求“Good
+				Code
+				Auth”认证）。
+				4.除Delphi、.Net和移动开发领域的程序员外（由部门出具证明材料），其他领域的开发人员要求通过ECP开发能力L1认证。
+			</field>
+			<field name="standard_condition">
+				1.最近1年内参与过公司产品1个及以上子系统的开发工作或同等规模的平台、组件及其他定制开发工作；提供相关需求的评审记录作为佐证材料。
+				2.最近1年内独立承担完成过工作量相当于5人天以上的单个功能需求开发任务；提供相关代码清单（含功能代码、测试代码）作为佐证材料。
+				3.近1年来未被通报任何研发黑色事件。
+			</field>
+		</record>
+		<record id="postcondition_3" model="hr.postcondition">
+			<field name="postlevel_id" ref="post_dev_p3" />
+			<field name="requirement_condition">
+				1.专业不限。
+				2.最近两次绩效评价CB及以上
+				3.持有产品与技术委员会办法的“Good Code
+				Auth”和“Good SQL Auth”两项资质认证（对于前端、移动等完全不接触SQL的开发，可以只要求“Good
+				Code
+				Auth”认证）。
+				4.除Delphi、.Net和移动开发领域的程序员外（由部门出具证明材料），其他领域的开发人员要求通过ECP开发能力L1认证。
+			</field>
+			<field name="standard_condition">
+				1.最近2年内主导过公司产品1个及以上子系统的开发工作或同等规模的平台、组件及其他定制开发工作；提供相关需求的评审记录作为佐证材料。
+				2.最近2年内作为核心骨干独立承担完成过累计工作量不少于30人天的核心功能的开发；提供相关代码清单（含功能代码、测试代码）作为佐证材料。
+				3.近1年来未被通报任何研发黑色事件。
+			</field>
+		</record>
+		<record id="postcondition_4" model="hr.postcondition">
+			<field name="postlevel_id" ref="post_dev_p4" />
+			<field name="requirement_condition">
+				1.专业不限。
+				2.最近两次绩效评价CB及以上
+				3.持有产品与技术委员会办法的“Good Code
+				Auth”和“Good SQL Auth”两项资质认证（对于前端、移动等完全不接触SQL的开发，可以只要求“Good
+				Code
+				Auth”认证）。
+				4.除Delphi、.Net和移动开发领域的程序员外（由部门出具证明材料），其他领域的开发人员要求通过ECP开发能力L2认证。
+			</field>
+			<field name="standard_condition">
+				1.最近2年内作为开发经理或核心骨干承担完成过累计工作量不少于60人天的核心功能开发；提供相关需求的评审记录以及这部分功能在用户环境的实际使用情况数据作为佐证材料。
+				2.最近2年内熟练掌握1个及以上子系统或同等规模的平台、组件及其他定制开发任务的全部业务及核心代码；提供相关代码清单（含功能代码、测试代码）作为佐证材料。
+				3.近1年来未被通报任何研发黑色事件。
+			</field>
+		</record>
+		<record id="postcondition_5" model="hr.postcondition">
+			<field name="postlevel_id" ref="post_dev_p5" />
+			<field name="requirement_condition">
+				1.专业不限。
+				2.最近两次绩效评价CB及以上
+				3.持有产品与技术委员会办法的“Good Code
+				Auth”和“Good SQL Auth”两项资质认证（对于前端、移动等完全不接触SQL的开发，可以只要求“Good
+				Code
+				Auth”认证）。
+				4.除Delphi、.Net和移动开发领域的程序员外（由部门出具证明材料），其他领域的开发人员要求通过ECP开发能力L2认证。
+			</field>
+			<field name="standard_condition">
+				1.最近2年内主持过1个及以上子系统或同等规模的平台、组件及其他定制开发工作；提供相关需求的评审记录以及这部分功能在用户环境的实际使用情况数据作为佐证材料。
+				2.最近2年内独立承担过1个及以上子系统或同等规模的平台、组件及其他定制开发的技术解决方案的编写；提供解决方案的产品立项评审记录作为佐证材料。
+				3.最近2年内在外部媒体上发表过1篇以上的论文或累计成功申请过1项以上公司专利；
+				4.近1年来未被通报任何研发黑色事件。
+			</field>
+		</record>
+		<record id="postcondition_6" model="hr.postcondition">
+			<field name="postlevel_id" ref="post_dev_p6" />
+			<field name="requirement_condition">
+				1.专业不限。
+				2.最近两次绩效评价CB及以上
+				3.持有产品与技术委员会办法的“Good Code
+				Auth”和“Good SQL Auth”两项资质认证（对于前端、移动等完全不接触SQL的开发，可以只要求“Good
+				Code
+				Auth”认证）。
+				4.除Delphi、.Net和移动开发领域的程序员外（由部门出具证明材料），其他领域的开发人员要求通过ECP开发能力L2认证。
+			</field>
+			<field name="standard_condition">
+				1.最近2年内主持过1个及以上独立产品或业务模块的研发工作；提供该产品的技术委员会立项评审材料以及该产品在用户环境实际使用情况作为佐证材料。
+				2.近1年来未被通报任何研发黑色事件。
+			</field>
+		</record>
+		<record id="postcondition_7" model="hr.postcondition">
+			<field name="postlevel_id" ref="post_dev_p7" />
+			<field name="requirement_condition">
+				1.专业不限。
+				2.最近两次绩效评价CB及以上
+				3.除Delphi、.Net和移动开发领域的程序员外（由部门出具证明材料），其他领域的开发人员要求通过ECP开发能力L3认证。
+			</field>
+			<field name="standard_condition">
+				1.最近3年内主持过2个及以上独立产品或业务模块的研发工作；提供该产品的技术委员会立项评审材料以及该产品在用户环境实际使用情况作为佐证材料。
+				2.近1年来未被通报任何研发黑色事件。
+			</field>
+		</record>
+		<record id="postcondition_8" model="hr.postcondition">
+			<field name="postlevel_id" ref="post_dev_p8" />
+			<field name="requirement_condition">
+				1.专业不限。
+				2.最近两次绩效评价CB及以上
+			</field>
+			<field name="standard_condition">
+				1.最近3年内主持过3个以上独立产品或业务模块的研发工作；提供该产品的技术委员会立项评审材料以及该产品在用户环境实际使用情况作为佐证材料。
+				2.近1年来未被通报任何研发黑色事件。
+			</field>
+		</record>
+		<record id="postdesc_dev_p1_skill_1" model="hr.postdesc">
+			<field name="postlevel_id" ref="post_dev_p1" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="qualification">
+				1、了解至少1个产品或业务领域；
+				2、能独立使用该功能模块的所有功能；
+				3、能在指导下正确理解该业务领域的需求及设计文档。
+			</field>
+		</record>
+		<record id="postdesc_dev_p2_skill_1" model="hr.postdesc">
+			<field name="postlevel_id" ref="post_dev_p2" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="qualification">
+				1、了解至少1个产品或业务领域；
+				2、能独立使用该功能模块的所有功能；
+				3、能在指导下正确理解该业务领域的需求及设计文档。
+			</field>
+		</record>
+		<record id="postdesc_dev_p3_skill_1" model="hr.postdesc">
+			<field name="postlevel_id" ref="post_dev_p3" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="qualification">
+				1、了解至少1个产品或业务领域；
+				2、能独立使用该功能模块的所有功能；
+				3、能在指导下正确理解该业务领域的需求及设计文档。
+			</field>
+		</record>
+		<record id="postdesc_dev_p4_skill_1" model="hr.postdesc">
+			<field name="postlevel_id" ref="post_dev_p4" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="qualification">
+				1、掌握至少1产品或业务领域；
+				2、了解产品所属行业的信息化现状及信息化发展趋势；
+				3、了解友商产品；
+				4、能熟练使用该业务领域内的所有功能；
+				5、能参与该业务领域的需求和设计评审，并能在评审中发现问题。
+			</field>
+		</record>
+		<record id="postdesc_dev_p5_skill_1" model="hr.postdesc">
+			<field name="postlevel_id" ref="post_dev_p5" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="qualification">
+				1、熟练掌握至少2个产品或业务领域所涉及到的业务知识；
+				2、孰悉友商产品的主要功能及核心结构，能提供与远光产品主要特点和功能的分析对比；
+				3、熟悉产品所属行业的信息化现状及信息化发展趋势；
+				4、熟练使用该业务领域的所有功能，并能针对性的提出产品改进建议；
+				5、具备参与业务方案编写的能力，及审核能力；
+				6、具备指导他人的能力。
+			</field>
+		</record>
+		<record id="postdesc_dev_p6_skill_1" model="hr.postdesc">
+			<field name="postlevel_id" ref="post_dev_p6" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="qualification">
+				1、熟练掌握至少2个产品或业务领域所涉及到的业务知识；
+				2、孰悉友商产品的主要功能及核心结构，能提供与远光产品主要特点和功能的分析对比；
+				3、熟悉产品所属行业的信息化现状及信息化发展趋势；
+				4、熟练使用该业务领域的所有功能，并能针对性的提出产品改进建议；
+				5、具备参与业务方案编写的能力，及审核能力；
+				6、具备指导他人的能力。
+			</field>
+		</record>
+		<record id="postdesc_dev_p7_skill_1" model="hr.postdesc">
+			<field name="postlevel_id" ref="post_dev_p7" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="qualification">
+				1、精通至少2个产品或业务领域所涉及到的业务知识；
+				2、孰悉友商产品的主要功能及核心结构，能提供与远光产品主要特点和功能的分析对比；
+				3、掌握产品所属行业的信息化现状及信息化发展趋势；
+				4、针对该产品或业务领域的功能，能够提出业务整合、结构优化以及业务架构调整等的建议方案；
+				5、具备评审业务方案的能力，并能提出改进建议；
+				6、具备培训他人的能力。
+			</field>
+		</record>
+		<record id="postdesc_dev_p8_skill_1" model="hr.postdesc">
+			<field name="postlevel_id" ref="post_dev_p8" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="qualification">-
+			</field>
+		</record>
+
+		<record id="skillscore_post_dev_skill_1_1"
+			model="hr.skillscore">
+			<field name="post_id" ref="post_dev" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="score">1</field>
+			<field name="description">
+				1、了解至少1个功能模块或相同规模的组件产品的业务知识；
+				2、能在指导下操作该功能模块。
+			</field>
+		</record>
+		<record id="skillscore_post_dev_skill_1_2"
+			model="hr.skillscore">
+			<field name="post_id" ref="post_dev" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="score">2</field>
+			<field name="description">
+				1、了解至少1个产品或业务领域；
+				2、能独立使用该功能模块的所有功能；
+				3、能在指导下正确理解该业务领域的需求及设计文档。
+			</field>
+		</record>
+		<record id="skillscore_post_dev_skill_1_3"
+			model="hr.skillscore">
+			<field name="post_id" ref="post_dev" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="score">3</field>
+			<field name="description">
+				1、掌握至少1产品或业务领域；
+				2、了解产品所属行业的信息化现状及信息化发展趋势；
+				3、了解友商产品；
+				4、能熟练使用该业务领域内的所有功能；
+				5、能参与该业务领域的需求和设计评审，并能在评审中发现问题。
+			</field>
+		</record>
+		<record id="skillscore_post_dev_skill_1_4"
+			model="hr.skillscore">
+			<field name="post_id" ref="post_dev" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="score">4</field>
+			<field name="description">
+				1、熟练掌握至少2个产品或业务领域所涉及到的业务知识；
+				2、孰悉友商产品的主要功能及核心结构，能提供与远光产品主要特点和功能的分析对比；
+				3、熟悉产品所属行业的信息化现状及信息化发展趋势；
+				4、熟练使用该业务领域的所有功能，并能针对性的提出产品改进建议；
+				5、具备参与业务方案编写的能力，及审核能力；
+				6、具备指导他人的能力。
+			</field>
+		</record>
+		<record id="skillscore_post_dev_skill_1_5"
+			model="hr.skillscore">
+			<field name="post_id" ref="post_dev" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="score">5</field>
+			<field name="description">
+				1、精通至少2个产品或业务领域所涉及到的业务知识；
+				2、孰悉友商产品的主要功能及核心结构，能提供与远光产品主要特点和功能的分析对比；
+				3、掌握产品所属行业的信息化现状及信息化发展趋势；
+				4、针对该产品或业务领域的功能，能够提出业务整合、结构优化以及业务架构调整等的建议方案；
+				5、具备评审业务方案的能力，并能提出改进建议；
+				6、具备培训他人的能力。
+			</field>
+		</record>
+		
+		<record id="postscore_dev_p1_skill_1" model="hr.postscore">
+			<field name="postlevel_id" ref="post_dev_p1" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="score">2</field>
+		</record>
+		<record id="postscore_dev_p2_skill_1" model="hr.postscore">
+			<field name="postlevel_id" ref="post_dev_p2" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="score">2</field>
+		</record>
+		<record id="postscore_dev_p3_skill_1" model="hr.postscore">
+			<field name="postlevel_id" ref="post_dev_p3" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="score">2</field>
+		</record>
+		<record id="postscore_dev_p4_skill_1" model="hr.postscore">
+			<field name="postlevel_id" ref="post_dev_p4" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="score">3</field>
+		</record>
+		<record id="postscore_dev_p5_skill_1" model="hr.postscore">
+			<field name="postlevel_id" ref="post_dev_p5" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="score">4</field>
+		</record>
+		<record id="postscore_dev_p6_skill_1" model="hr.postscore">
+			<field name="postlevel_id" ref="post_dev_p6" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="score">4</field>
+		</record>
+		<record id="postscore_dev_p7_skill_1" model="hr.postscore">
+			<field name="postlevel_id" ref="post_dev_p7" />
+			<field name="skill_id" ref="skill_1" />
+			<field name="score">5</field>
+		</record>
+	</data>
+</odoo>

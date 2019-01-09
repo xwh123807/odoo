@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr-evaluation_hr-level,hr-evaluation.hr-level,model_hr_level,,1,1,1,1
+access_hr-evaluation_hr-post,hr-evaluation.hr-post,model_hr_post,,1,1,1,1
+access_hr-evaluation_hr-postlevel,hr-evaluation.hr-postlevel,model_hr_postlevel,,1,1,1,1
+access_hr-evaluation_hr-skill,hr-evaluation.hr-skill,model_hr_skill,,1,1,1,1
+access_hr-evaluation_hr-postskill,hr-evaluation.hr-postskill,model_hr_postskill,,1,1,1,1
+access_hr-evaluation_hr-postcondition,hr-evaluation.hr-postcondition,model_hr_postcondition,,1,1,1,1
+access_hr-evaluation_hr-postdesc,hr-evaluation.hr-postdesc,model_hr_postdesc,,1,1,1,1
+access_hr-evaluation_hr-skillscore,hr-evaluation.hr-skillscore,model_hr_skillscore,,1,1,1,1
+access_hr-evaluation_hr-postscore,hr-evaluation.hr-postscore,model_hr_postscore,,1,1,1,1
