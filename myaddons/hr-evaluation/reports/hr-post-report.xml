@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<odoo>
+	<data>
+		<report id="action_hr_evaluation_report" string="Post Report"
+			model="hr.post" report_type="qweb-pdf"
+			name="hr-evaluation.report_hr_post_template" />
+
+		<template id="report_hr_post_template">
+			<t t-call="web.html_container">
+				<t t-call="web.external_layout">
+					<t t-foreach="docs" t-as="doc">
+						<div class="page">
+							<table class="table table-bordered mb64">
+								<tr>
+									<td colspan="20">
+										<strong>
+											<span t-field="doc.name" />
+										</strong>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="20">
+										<u>
+											<strong>Post Level</strong>
+										</u>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<strong>Level</strong>
+									</td>
+									<td colspan="6">
+										<strong>Name</strong>
+									</td>
+									<td colspan="12">
+										<strong>Description</strong>
+									</td>
+								</tr>
+								<tr t-foreach="doc.postlevel_ids" t-as="postlevel">
+									<td colspan="2">
+										<span t-field="postlevel.level_id" />
+									</td>
+									<td colspan="6">
+										<span t-field="postlevel.name" />
+									</td>
+									<td colspan="12">
+										<span t-field="postlevel.description" />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="20">
+										<u>
+											<strong>Post Condition</strong>
+										</u>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="4">
+										<strong>Level</strong>
+									</td>
+									<td colspan="4">
+										<strong>Post Level</strong>
+									</td>
+									<td colspan="6">
+										<strong>Requirement</strong>
+									</td>
+									<td colspan="6">
+										<strong>Standard</strong>
+									</td>
+								</tr>
+								<tr t-foreach="doc.postcondition_ids" t-as="postcondition">
+									<td colspan="4">
+										<span t-field="postcondition.level_id" />
+									</td>
+									<td colspan="4">
+										<span t-field="postcondition.postlevel_id" />
+									</td>
+									<td colspan="6">
+										<span t-field="postcondition.requirement_condition" />
+									</td>
+									<td colspan="6">
+										<span t-field="postcondition.standard_condition" />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="20">
+										<u>
+											<strong>Skill</strong>
+										</u>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="4">
+										<strong>Name</strong>
+									</td>
+									<td colspan="16">
+										<strong>Description</strong>
+									</td>
+								</tr>
+								<tr t-foreach="doc.postskill_ids" t-as="postskill">
+									<td colspan="4">
+										<span t-field="postskill.skill_id" />
+									</td>
+									<td colspan="16">
+										<span t-field="postskill.skill_description" />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="20">
+										<u>
+											<strong>Skill Score</strong>
+										</u>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="4">
+										<strong>Skill</strong>
+									</td>
+									<td colspan="2">
+										<strong>Score</strong>
+									</td>
+									<td colspan="12">
+										<strong>Description</strong>
+									</td>
+								</tr>
+								<tr t-foreach="doc.skillscore_ids" t-as="skillscore">
+									<td colspan="4">
+										<span t-field="skillscore.skill_id" />
+									</td>
+									<td colspan="2">
+										<span t-field="skillscore.score" />
+									</td>
+									<td colspan="12">
+										<span t-field="skillscore.description" />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="20">
+										<u>
+											<strong>Post Score</strong>
+										</u>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="6">
+										<strong>Post Level</strong>
+									</td>
+									<td colspan="6">
+										<strong>Skill</strong>
+									</td>
+									<td colspan="8">
+										<strong>Score</strong>
+									</td>
+								</tr>
+								<tr t-foreach="doc.postscore_ids" t-as="postscore">
+									<td colspan="6">
+										<span t-field="postscore.postlevel_id" />
+									</td>
+									<td colspan="6">
+										<span t-field="postscore.skill_id" />
+									</td>
+									<td colspan="8">
+										<span t-field="postscore.score" />
+									</td>
+								</tr>
+							</table>
+							<table class="table table-bordered mb64">
+								<tr>
+									<td colspan="20">
+										<u>
+											<strong>Post Qualification</strong>
+										</u>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<strong>Level</strong>
+									</td>
+									<td colspan="4">
+										<strong>Post Level</strong>
+									</td>
+									<td colspan="4">
+										<strong>Skill</strong>
+									</td>
+									<td colspan="10">
+										<strong>Qualification</strong>
+									</td>
+								</tr>
+								<tr t-foreach="doc.postdesc_ids" t-as="postdesc">
+									<td colspan="2">
+										<span t-field="postdesc.level_id" />
+									</td>
+									<td colspan="4">
+										<span t-field="postdesc.postlevel_id" />
+									</td>
+									<td colspan="4">
+										<span t-field="postdesc.skill_id" />
+									</td>
+									<td colspan="10">
+										<span t-field="postdesc.qualification" />
+									</td>
+								</tr>
+							</table>
+						</div>
+					</t>
+				</t>
+			</t>
+		</template>
+	</data>
+</odoo>
