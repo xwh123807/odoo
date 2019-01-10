@@ -8,3 +8,5 @@ access_hr-evaluation_hr-postcondition,hr-evaluation.hr-postcondition,model_hr_po
 access_hr-evaluation_hr-postdesc,hr-evaluation.hr-postdesc,model_hr_postdesc,,1,1,1,1
 access_hr-evaluation_hr-skillscore,hr-evaluation.hr-skillscore,model_hr_skillscore,,1,1,1,1
 access_hr-evaluation_hr-postscore,hr-evaluation.hr-postscore,model_hr_postscore,,1,1,1,1
+access_hr-evaluation_hr-evaluation,hr-evaluation.hr-evaluation,model_hr_evaluation,,1,1,1,1
+access_hr-evaluation_hr-evaluation-line,hr-evaluation.hr-evaluation-line,model_hr_evaluation_line,,1,1,1,1

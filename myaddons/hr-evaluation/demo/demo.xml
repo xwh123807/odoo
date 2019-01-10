@@ -491,5 +491,12 @@
 			<field name="skill_id" ref="skill_1" />
 			<field name="score">5</field>
 		</record>
+		
+		<record id="evaluation_admin" model="hr.evaluation">
+			<field name="employee_id" ref="hr.employee_admin"/>
+			<field name="current_postlevel" ref="post_dev_p1"/>
+			<field name="evaluation_postlevel" ref="post_dev_p2"/>
+			<field name="state">draft</field>
+		</record>
 	</data>
 </odoo>

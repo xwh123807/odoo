@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
-from odoo.release import description
 
 
 class Level(models.Model):
@@ -118,3 +117,93 @@ class PostScore(models.Model):
     skill_id = fields.Many2one('hr.skill', string='Skill', required=True, help='Skill')
     score = fields.Integer(string='Score')
     post_id = fields.Many2one('hr.post', string='Post', related='postlevel_id.post_id', readonly=True, store=True)
+    skillscore_description = fields.Text('Description', compute='_compute_skill_score_description')
+    
+    @api.depends('skill_id', 'post_id')
+    def _compute_skill_score_description(self):
+        for line in self:
+            line.skillscore_description = self.env['hr.skillscore'].search([('post_id', '=', line.post_id.id),
+                ('skill_id', '=', line.skill_id.id), ('score', '=', line.score)], limit=1).description;
+
+
+class Evaluation(models.Model):
+    """
+        职级评估申请表
+    """
+    _name = 'hr.evaluation'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
+    
+    employee_id = fields.Many2one('hr.employee', string='Evaluation User', required=True)
+    date = fields.Date('Date')
+    current_postlevel = fields.Many2one('hr.postlevel', string='Current Post Level')
+    evaluation_postlevel = fields.Many2one('hr.postlevel', string='Evaluation Post Level')
+    state = fields.Selection([
+        ('draft', 'To Submit'),
+        ('submit', 'Submitted'),
+        ('approve', 'Approved'),
+        ('done', 'Done'),
+        ('refused', 'Refused')
+    ], string='Status', default='draft', index=True, readonly=True, store=True, track_visibility='onchange')
+    elaluation_line_ids = fields.One2many('hr.evaluation.line', 'evaluation_id', 'Evaluation Line')
+    note = fields.Text('Note')
+    total_standard_score = fields.Integer('Total Standard Score', compute='_compute_total_standard_score')
+    total_evaluation_score = fields.Integer('Total Evaluation Score', compute='_compute_evaluation_score')
+
+    @api.depends('elaluation_line_ids')
+    def _compute_total_standard_score(self):
+        for item in self:
+            item.total_standard_score = sum(item.elaluation_line_ids.mapped('standard_score'))
+        
+    @api.depends('elaluation_line_ids')
+    def _compute_evaluation_score(self):
+        for item in self:
+            item.total_standard_score = sum(item.elaluation_line_ids.mapped('evaluation_score'))
+
+    @api.multi
+    def action_submit_evaluation(self):
+        self.write({'state': 'submit'})
+        
+    @api.multi
+    def action_approve_evaluation(self):
+        self.write({'state': 'approve'})
+    
+    @api.multi
+    def action_refuse_evaluation(self):
+        self.write({'state': 'draft'})
+        
+    @api.multi
+    def action_get_attachment_view(self):
+        self.ensure_one()
+        res = self.env['ir.actions.act_window'].for_xml_id('base', 'action_attachment')
+        res['domain'] = [('res_model', '=', 'hr.evaluation'), ('res_id', 'in', self.ids)]
+        res['context'] = {'default_res_model': 'hr.evaluation', 'default_res_id': self.id}
+        return res;
+    
+    @api.onchange('evaluation_postlevel')
+    def _onchange_evaluation_postlevel(self):
+        if self.evaluation_postlevel:
+            res = self.env['hr.postscore'].search([('postlevel_id', '=', self.evaluation_postlevel.id)])
+            items = [];
+            for line in res:
+                line_src = {
+                    'evaluation_id': self.id,
+                    'skill_id': line.skill_id,
+                    'postlevel_skill_description': line.skillscore_description,
+                    'standard_score': line.score
+                }
+                items.append(line_src)
+            
+            self.elaluation_line_ids = items;
+    
+class EvaluationLine(models.Model):
+    """
+        职级评估申请表明细
+    """
+    _name = 'hr.evaluation.line'
+    
+    evaluation_id = fields.Many2one('hr.evalation', string='Evaluation ID')
+    skill_id = fields.Many2one('hr.skill', string='Skill')
+    postlevel_skill_description = fields.Text('Post Level Skill')
+    standard_score = fields.Integer('Standard Score')
+    evaluation_score = fields.Integer('Evaluation Score')
+    note = fields.Text('Apply For Evaluation')

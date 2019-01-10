@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<odoo>
+	<data>
+		<report id="action_hr_evaluation_evaluation_report" string="Evaluation"
+			model="hr.evaluation" report_type="qweb-pdf"
+			name="hr-evaluation.report_hr_evaluation_template" />
+
+		<template id="report_hr_evaluation_template">
+			<t t-call="web.html_container">
+				<t t-call="web.external_layout">
+					<t t-foreach="docs" t-as="doc">
+						<div class="page">
+							<table class="table table-bordered mb64">
+								<tr>
+									<td colspan="20"><strong>Evaluation</strong></td>
+								</tr>
+								<tr>
+									<td colspan="3">Employee</td>
+									<td colspan="6"><span t-field="doc.employee_id"/></td>
+									<td colspan="3">Date</td>
+									<td colspan="6"><span t-field="doc.date"/></td>
+								</tr>
+								<tr>
+									<td colspan="3">Current Post Level</td>
+									<td colspan="6"><span t-field="doc.current_postlevel"/></td>
+									<td colspan="3">Evaluation Post Level</td>
+									<td colspan="6"><span t-field="doc.evaluation_postlevel"/></td>
+								</tr>
+								<tr>
+									<td colspan="3"><strong>Skill</strong></td>
+									<td colspan="7"><strong>Post Level Skill</strong></td>
+									<td colspan="2"><strong>Standard Score</strong></td>
+									<td colspan="2"><strong>Evaluation Score</strong></td>
+									<td colspan="6"><strong>Apply for Evaluation</strong></td>
+								</tr>
+								<tr t-foreach="doc.elaluation_line_ids" t-as="line">
+									<td colspan="3"><span t-field="line.skill_id"/></td>
+									<td colspan="7"><span t-field="line.postlevel_skill_description"/></td>
+									<td colspan="2"><span t-field="line.standard_score"/></td>
+									<td colspan="2"><span t-field="line.evaluation_score"/></td>
+									<td colspan="6"><span t-field="line.note"/></td>
+								</tr>
+								<tr>
+									<td colspan="10"></td>
+									<td colspan="2"><span t-field="doc.total_standard_score"/></td>
+									<td colspan="2"><span t-field="doc.total_evaluation_score"/></td>
+									<td colspan="6"></td>
+								</tr>
+							</table>
+						</div>
+					</t>
+				</t>
+			</t>
+		</template>
+	</data>
+</odoo>
