@@ -133,6 +133,7 @@ class Evaluation(models.Model):
     _name = 'hr.evaluation'
     _inherit = ['mail.thread', 'mail.activity.mixin']
     
+    name = fields.Char('Name', default="New", readonly=True)
     employee_id = fields.Many2one('hr.employee', string='Evaluation User', required=True)
     date = fields.Date('Date')
     current_postlevel = fields.Many2one('hr.postlevel', string='Current Post Level')
@@ -148,6 +149,7 @@ class Evaluation(models.Model):
     note = fields.Text('Note')
     total_standard_score = fields.Integer('Total Standard Score', compute='_compute_total_standard_score')
     total_evaluation_score = fields.Integer('Total Evaluation Score', compute='_compute_evaluation_score')
+#     attachment_number = fields.Integer('Number of Attachments', compute='_compute_attachment_number')
 
     @api.depends('elaluation_line_ids')
     def _compute_total_standard_score(self):
@@ -158,6 +160,19 @@ class Evaluation(models.Model):
     def _compute_evaluation_score(self):
         for item in self:
             item.total_standard_score = sum(item.elaluation_line_ids.mapped('evaluation_score'))
+    
+    @api.multi
+    def _compute_attachment_number(self):
+        attachment_data = self.env['ir.attachment'].read_group([('res_model', '=', 'hr.evaluation'), ('res_id', 'in', self.ids)], ['res_id'], ['res_id'])
+        attachment = dict((data['res_id'], data['res_id_count']) for data in attachment_data)
+        for expense in self:
+            expense.attachment_number = attachment.get(expense.id, 0)
+
+    @api.model
+    def create(self, vals):
+        if (vals.get('name', 'New') == 'New'):
+            vals['name'] = self.env['ir.sequence'].next_by_code('hr.evaluation') or '/'
+        return super(Evaluation, self).create(vals)
 
     @api.multi
     def action_submit_evaluation(self):

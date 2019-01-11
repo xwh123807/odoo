@@ -24,6 +24,7 @@
 
     # always loaded
     'data': [
+        'data/evaluation-data.xml',
         'reports/hr-post-report.xml',
         'reports/hr-evaluation-report.xml',
         'security/ir.model.access.csv',
