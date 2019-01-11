@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<odoo>
+	<data>
+		<!-- Sequences for evaluation -->
+		<record id="seq_evaluation" model="ir.sequence">
+			<field name="name">evaluation</field>
+			<field name="code">hr.evaluation</field>
+			<field name="prefix">HRE</field>
+			<field name="padding">5</field>
+			<field name="company_id" eval="False" />
+		</record>
+	</data>
+</odoo>
+        
