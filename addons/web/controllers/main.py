@@ -938,6 +938,10 @@ class DataSet(http.Controller):
             'records': records
         }
 
+    @http.route('/web/dataset/model/<model>', type='http', methods=['GET'])
+    def list(self, model):
+        return self.do_search_read(model)
+
     @http.route('/web/dataset/load', type='json', auth="user")
     def load(self, model, id, fields):
         value = {}

@@ -42,7 +42,7 @@ class APIController(http.Controller):
     def __init__(self):
         self._model = 'ir.model'
 
-    @validate_token
+    #@validate_token
     @http.route(_routes, type='http', auth="none", methods=['GET'], csrf=False)
     def get(self, model=None, id=None, **payload):
         ioc_name = model

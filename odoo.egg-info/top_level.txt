@@ -1,0 +1,4 @@
+myaddons
+myfly
+odoo
+study

@@ -1,0 +1,2705 @@
+{
+  "jsonrpc": "2.0",
+  "id": 36155000,
+  "result": {
+    "fields_views": {
+      "list": {
+        "model": "res.company",
+        "field_parent": "child_ids",
+        "arch": "<tree string=\"Companies\">\n                    <field name=\"sequence\" widget=\"handle\" modifiers=\"{}\"/>\n                    <field name=\"name\" modifiers=\"{&quot;required&quot;: true}\"/>\n                    <field name=\"partner_id\" on_change=\"1\" can_create=\"true\" can_write=\"true\" modifiers=\"{&quot;required&quot;: true}\"/>\n                </tree>",
+        "name": "res.company.tree",
+        "type": "tree",
+        "view_id": 99,
+        "base_model": "res.company",
+        "fields": {
+          "name": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [
+              "partner_id.name"
+            ],
+            "manual": false,
+            "readonly": false,
+            "related": [
+              "partner_id",
+              "name"
+            ],
+            "required": true,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u516c\u53f8\u540d\u79f0",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          },
+          "sequence": {
+            "type": "integer",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [],
+            "group_operator": "sum",
+            "help": "\u7528\u4e8e\u5728\u516c\u53f8\u5207\u6362\u5668\u4e2d\u5bf9\u516c\u53f8\u8fdb\u884c\u6392\u5e8f",
+            "manual": false,
+            "readonly": false,
+            "required": false,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u5e8f\u53f7",
+            "views": {}
+          },
+          "partner_id": {
+            "type": "many2one",
+            "change_default": false,
+            "company_dependent": false,
+            "context": {},
+            "depends": [],
+            "domain": [],
+            "manual": false,
+            "readonly": false,
+            "relation": "res.partner",
+            "required": true,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u4e1a\u52a1\u4f19\u4f34",
+            "views": {}
+          }
+        },
+        "toolbar": {
+          "print": [
+            {
+              "id": 75,
+              "name": "\u9884\u89c8\u5185\u90e8\u62a5\u8868",
+              "type": "ir.actions.report",
+              "binding_type": "report",
+              "model": "res.company",
+              "report_type": "qweb-pdf",
+              "report_name": "web.preview_internalreport",
+              "report_file": "web.preview_internalreport",
+              "groups_id": [],
+              "multi": false,
+              "paperformat_id": false,
+              "print_report_name": false,
+              "attachment_use": false,
+              "attachment": false,
+              "help": false,
+              "binding_model_id": [
+                83,
+                "\u516c\u53f8"
+              ],
+              "create_uid": [
+                1,
+                "OdooBot"
+              ],
+              "create_date": "2019-04-25 03:09:04",
+              "write_uid": [
+                1,
+                "OdooBot"
+              ],
+              "write_date": "2019-04-25 03:09:04",
+              "xml_id": "web.action_report_internalpreview",
+              "display_name": "\u9884\u89c8\u5185\u90e8\u62a5\u8868",
+              "__last_update": "2019-04-25 03:09:04",
+              "string": "\u9884\u89c8\u5185\u90e8\u62a5\u8868"
+            },
+            {
+              "id": 76,
+              "name": "\u9884\u89c8\u5916\u90e8\u62a5\u8868",
+              "type": "ir.actions.report",
+              "binding_type": "report",
+              "model": "res.company",
+              "report_type": "qweb-pdf",
+              "report_name": "web.preview_externalreport",
+              "report_file": "web.preview_externalreport",
+              "groups_id": [],
+              "multi": false,
+              "paperformat_id": false,
+              "print_report_name": false,
+              "attachment_use": false,
+              "attachment": false,
+              "help": false,
+              "binding_model_id": [
+                83,
+                "\u516c\u53f8"
+              ],
+              "create_uid": [
+                1,
+                "OdooBot"
+              ],
+              "create_date": "2019-04-25 03:09:04",
+              "write_uid": [
+                1,
+                "OdooBot"
+              ],
+              "write_date": "2019-04-25 03:09:04",
+              "xml_id": "web.action_report_externalpreview",
+              "display_name": "\u9884\u89c8\u5916\u90e8\u62a5\u8868",
+              "__last_update": "2019-04-25 03:09:04",
+              "string": "\u9884\u89c8\u5916\u90e8\u62a5\u8868"
+            }
+          ],
+          "action": [],
+          "relate": []
+        }
+      },
+      "kanban": {
+        "model": "res.company",
+        "field_parent": false,
+        "arch": "<kanban>\n                    <field name=\"name\" modifiers=\"{&quot;required&quot;: true}\"/>\n                    <field name=\"email\" modifiers=\"{}\"/>\n                    <field name=\"phone\" modifiers=\"{}\"/>\n                    <templates>\n                        <t t-name=\"kanban-box\">\n                            <div t-attf-class=\"oe_kanban_global_click\">\n                                <div class=\"text-center\">\n                                    <i class=\"fa fa-building\" role=\"img\" aria-label=\"Enterprise\" title=\"Enterprise\"/> <strong><field name=\"name\" modifiers=\"{&quot;required&quot;: true}\"/></strong>\n                                </div>\n                                <hr class=\"mt4 mb4\"/>\n                                <div class=\"row\">\n                                    <div t-if=\"record.email.value\" class=\"col-6 text-center\">\n                                        <strong>Email:</strong>\n                                    </div>\n                                    <div t-if=\"record.phone.value\" class=\"col-6 text-center\">\n                                        <strong>Phone</strong>\n                                    </div>\n                                    <div t-if=\"record.phone.value\" class=\"col-6 text-center\">\n                                        <field name=\"email\" modifiers=\"{}\"/>\n                                    </div>\n                                    <div t-if=\"record.phone.value\" class=\"col-6 text-center\">\n                                        <field name=\"phone\" modifiers=\"{}\"/>\n                                    </div>\n                                </div>\n                            </div>\n                        </t>\n                    </templates>\n                </kanban>",
+        "name": "res.company.kanban",
+        "type": "kanban",
+        "view_id": 100,
+        "base_model": "res.company",
+        "fields": {
+          "name": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [
+              "partner_id.name"
+            ],
+            "manual": false,
+            "readonly": false,
+            "related": [
+              "partner_id",
+              "name"
+            ],
+            "required": true,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u516c\u53f8\u540d\u79f0",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          },
+          "email": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [
+              "partner_id.email"
+            ],
+            "manual": false,
+            "readonly": false,
+            "related": [
+              "partner_id",
+              "email"
+            ],
+            "required": false,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "Email",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          },
+          "phone": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [
+              "partner_id.phone"
+            ],
+            "manual": false,
+            "readonly": false,
+            "related": [
+              "partner_id",
+              "phone"
+            ],
+            "required": false,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u7535\u8bdd",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          }
+        },
+        "toolbar": {
+          "print": [
+            {
+              "id": 75,
+              "name": "\u9884\u89c8\u5185\u90e8\u62a5\u8868",
+              "type": "ir.actions.report",
+              "binding_type": "report",
+              "model": "res.company",
+              "report_type": "qweb-pdf",
+              "report_name": "web.preview_internalreport",
+              "report_file": "web.preview_internalreport",
+              "groups_id": [],
+              "multi": false,
+              "paperformat_id": false,
+              "print_report_name": false,
+              "attachment_use": false,
+              "attachment": false,
+              "help": false,
+              "binding_model_id": [
+                83,
+                "\u516c\u53f8"
+              ],
+              "create_uid": [
+                1,
+                "OdooBot"
+              ],
+              "create_date": "2019-04-25 03:09:04",
+              "write_uid": [
+                1,
+                "OdooBot"
+              ],
+              "write_date": "2019-04-25 03:09:04",
+              "xml_id": "web.action_report_internalpreview",
+              "display_name": "\u9884\u89c8\u5185\u90e8\u62a5\u8868",
+              "__last_update": "2019-04-25 03:09:04",
+              "string": "\u9884\u89c8\u5185\u90e8\u62a5\u8868"
+            },
+            {
+              "id": 76,
+              "name": "\u9884\u89c8\u5916\u90e8\u62a5\u8868",
+              "type": "ir.actions.report",
+              "binding_type": "report",
+              "model": "res.company",
+              "report_type": "qweb-pdf",
+              "report_name": "web.preview_externalreport",
+              "report_file": "web.preview_externalreport",
+              "groups_id": [],
+              "multi": false,
+              "paperformat_id": false,
+              "print_report_name": false,
+              "attachment_use": false,
+              "attachment": false,
+              "help": false,
+              "binding_model_id": [
+                83,
+                "\u516c\u53f8"
+              ],
+              "create_uid": [
+                1,
+                "OdooBot"
+              ],
+              "create_date": "2019-04-25 03:09:04",
+              "write_uid": [
+                1,
+                "OdooBot"
+              ],
+              "write_date": "2019-04-25 03:09:04",
+              "xml_id": "web.action_report_externalpreview",
+              "display_name": "\u9884\u89c8\u5916\u90e8\u62a5\u8868",
+              "__last_update": "2019-04-25 03:09:04",
+              "string": "\u9884\u89c8\u5916\u90e8\u62a5\u8868"
+            }
+          ],
+          "action": [],
+          "relate": []
+        }
+      },
+      "form": {
+        "model": "res.company",
+        "field_parent": false,
+        "arch": "<form string=\"Company\">\n                  <sheet>\n                    <field name=\"logo\" widget=\"image\" class=\"oe_avatar\" modifiers=\"{}\"/>\n                <field name=\"partner_gid\" invisible=\"True\" modifiers=\"{&quot;invisible&quot;: true, &quot;readonly&quot;: true}\"/>\n            \n                    <div class=\"oe_title\">\n                        <label for=\"name\" class=\"oe_edit_only\"/>\n                        <h1>\n                            <field name=\"name\" widget=\"field_partner_autocomplete\" modifiers=\"{&quot;required&quot;: true}\"/>\n                        </h1>\n                    </div>\n                    <notebook colspan=\"4\">\n                        <page string=\"General Information\">\n                            <group>\n                                <group>\n                                    <field name=\"partner_id\" readonly=\"1\" required=\"0\" on_change=\"1\" can_create=\"true\" can_write=\"true\" invisible=\"1\" modifiers=\"{&quot;invisible&quot;: true, &quot;readonly&quot;: true}\"/>\n                                    <label for=\"street\" string=\"Address\"/>\n                                    <div class=\"o_address_format\">\n                                        <field name=\"street\" placeholder=\"Street...\" class=\"o_address_street\" modifiers=\"{}\"/>\n                                        <field name=\"street2\" placeholder=\"Street 2...\" class=\"o_address_street\" modifiers=\"{}\"/>\n                                        <field name=\"city\" placeholder=\"City\" class=\"o_address_city\" modifiers=\"{}\"/>\n                                        <field name=\"state_id\" class=\"o_address_state\" placeholder=\"State\" options=\"{&quot;no_open&quot;: True}\" on_change=\"1\" can_create=\"true\" can_write=\"true\" modifiers=\"{}\"/>\n                                        <field name=\"zip\" placeholder=\"ZIP\" class=\"o_address_zip\" modifiers=\"{}\"/>\n                                        <field name=\"country_id\" placeholder=\"Country\" class=\"o_address_country\" options=\"{&quot;no_open&quot;: True}\" on_change=\"1\" can_create=\"true\" can_write=\"true\" modifiers=\"{}\"/>\n                                    </div>\n                                </group>\n                                <group>\n                                    <field name=\"website\" widget=\"url\" placeholder=\"e.g. www.odoo.com\" modifiers=\"{}\"/>\n                                    <field name=\"phone\" modifiers=\"{}\"/>\n                                    <field name=\"email\" modifiers=\"{}\"/>\n                                    <field name=\"vat\" widget=\"field_partner_autocomplete\" modifiers=\"{}\"/>\n                                    <field name=\"company_registry\" modifiers=\"{}\"/>\n                    <field name=\"incoterm_id\" can_create=\"true\" can_write=\"true\" modifiers=\"{}\"/>\n                \n                                    <field name=\"currency_id\" options=\"{'no_create': True, 'no_open': True}\" id=\"company_currency\" context=\"{'active_test': False}\" can_create=\"true\" can_write=\"true\" modifiers=\"{&quot;required&quot;: true}\"/>\n                <field name=\"nomenclature_id\" can_create=\"true\" can_write=\"true\" modifiers=\"{}\"/>\n            \n                                    <field name=\"parent_id\" can_create=\"true\" can_write=\"true\" invisible=\"1\" modifiers=\"{&quot;invisible&quot;: true}\"/>\n                                    <field name=\"sequence\" invisible=\"1\" modifiers=\"{&quot;invisible&quot;: true}\"/>\n                                </group>\n                                <group name=\"social_media\"/>\n                            </group>\n                        </page>\n                    </notebook>\n                    </sheet>\n                </form>",
+        "name": "res.company.form",
+        "type": "form",
+        "view_id": 98,
+        "base_model": "res.company",
+        "fields": {
+          "name": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [
+              "partner_id.name"
+            ],
+            "manual": false,
+            "readonly": false,
+            "related": [
+              "partner_id",
+              "name"
+            ],
+            "required": true,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u516c\u53f8\u540d\u79f0",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          },
+          "sequence": {
+            "type": "integer",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [],
+            "group_operator": "sum",
+            "help": "\u7528\u4e8e\u5728\u516c\u53f8\u5207\u6362\u5668\u4e2d\u5bf9\u516c\u53f8\u8fdb\u884c\u6392\u5e8f",
+            "manual": false,
+            "readonly": false,
+            "required": false,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u5e8f\u53f7",
+            "views": {}
+          },
+          "parent_id": {
+            "type": "many2one",
+            "change_default": false,
+            "company_dependent": false,
+            "context": {},
+            "depends": [],
+            "domain": [],
+            "manual": false,
+            "readonly": false,
+            "relation": "res.company",
+            "required": false,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u4e0a\u7ea7\u516c\u53f8",
+            "views": {}
+          },
+          "partner_id": {
+            "type": "many2one",
+            "change_default": false,
+            "company_dependent": false,
+            "context": {},
+            "depends": [],
+            "domain": [],
+            "manual": false,
+            "readonly": false,
+            "relation": "res.partner",
+            "required": true,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u4e1a\u52a1\u4f19\u4f34",
+            "views": {}
+          },
+          "logo": {
+            "type": "binary",
+            "attachment": false,
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [
+              "partner_id.image"
+            ],
+            "help": "\u8be5\u5b57\u6bb5\u4fdd\u5b58\u7684\u56fe\u50cf\u7528\u4f5c\u8054\u7cfb\u4eba\u7684\u5934\u50cf\uff0c\u9650\u5236\u4e3a1024x1024px",
+            "manual": false,
+            "readonly": false,
+            "related": [
+              "partner_id",
+              "image"
+            ],
+            "required": false,
+            "searchable": true,
+            "sortable": false,
+            "store": false,
+            "string": "\u516c\u53f8 Logo",
+            "views": {}
+          },
+          "currency_id": {
+            "type": "many2one",
+            "change_default": false,
+            "company_dependent": false,
+            "context": {},
+            "depends": [],
+            "domain": [],
+            "manual": false,
+            "readonly": false,
+            "relation": "res.currency",
+            "required": true,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u5e01\u79cd",
+            "views": {}
+          },
+          "street": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [],
+            "manual": false,
+            "readonly": false,
+            "required": false,
+            "searchable": false,
+            "sortable": false,
+            "store": false,
+            "string": "\u8857\u9053",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          },
+          "street2": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [],
+            "manual": false,
+            "readonly": false,
+            "required": false,
+            "searchable": false,
+            "sortable": false,
+            "store": false,
+            "string": "\u8857\u9053 2",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          },
+          "zip": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [],
+            "manual": false,
+            "readonly": false,
+            "required": false,
+            "searchable": false,
+            "sortable": false,
+            "store": false,
+            "string": "\u90ae\u653f\u7f16\u7801",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          },
+          "city": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [],
+            "manual": false,
+            "readonly": false,
+            "required": false,
+            "searchable": false,
+            "sortable": false,
+            "store": false,
+            "string": "\u57ce\u5e02",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          },
+          "state_id": {
+            "type": "many2one",
+            "change_default": false,
+            "company_dependent": false,
+            "context": {},
+            "depends": [],
+            "domain": [],
+            "manual": false,
+            "readonly": false,
+            "relation": "res.country.state",
+            "required": false,
+            "searchable": false,
+            "sortable": false,
+            "store": false,
+            "string": "\u72b6\u6001",
+            "views": {}
+          },
+          "country_id": {
+            "type": "many2one",
+            "change_default": false,
+            "company_dependent": false,
+            "context": {},
+            "depends": [],
+            "domain": [],
+            "manual": false,
+            "readonly": false,
+            "relation": "res.country",
+            "required": false,
+            "searchable": false,
+            "sortable": false,
+            "store": false,
+            "string": "\u56fd\u5bb6/\u5730\u533a",
+            "views": {}
+          },
+          "email": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [
+              "partner_id.email"
+            ],
+            "manual": false,
+            "readonly": false,
+            "related": [
+              "partner_id",
+              "email"
+            ],
+            "required": false,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "Email",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          },
+          "phone": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [
+              "partner_id.phone"
+            ],
+            "manual": false,
+            "readonly": false,
+            "related": [
+              "partner_id",
+              "phone"
+            ],
+            "required": false,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u7535\u8bdd",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          },
+          "website": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [
+              "partner_id.website"
+            ],
+            "manual": false,
+            "readonly": false,
+            "related": [
+              "partner_id",
+              "website"
+            ],
+            "required": false,
+            "searchable": true,
+            "sortable": false,
+            "store": false,
+            "string": "\u7f51\u7ad9",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          },
+          "vat": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [
+              "partner_id.vat"
+            ],
+            "help": "\u7a0e\u53f7\u3002 \u5982\u679c\u8054\u7cfb\u4eba\u9700\u7f34\u7eb3\u7a0e\u6b3e\uff0c\u8bf7\u586b\u5199\u3002 \u7528\u4e8e\u67d0\u4e9b\u6cd5\u5f8b\u58f0\u660e\u3002",
+            "manual": false,
+            "readonly": false,
+            "related": [
+              "partner_id",
+              "vat"
+            ],
+            "required": false,
+            "searchable": true,
+            "sortable": false,
+            "store": false,
+            "string": "\u7a0e\u53f7",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          },
+          "company_registry": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [],
+            "manual": false,
+            "readonly": false,
+            "required": false,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u516c\u53f8\u6ce8\u518c",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          },
+          "nomenclature_id": {
+            "type": "many2one",
+            "change_default": false,
+            "company_dependent": false,
+            "context": {},
+            "depends": [],
+            "domain": [],
+            "manual": false,
+            "readonly": false,
+            "relation": "barcode.nomenclature",
+            "required": false,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u547d\u540d\u89c4\u5219",
+            "views": {}
+          },
+          "partner_gid": {
+            "type": "integer",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [
+              "partner_id.partner_gid"
+            ],
+            "group_operator": "sum",
+            "manual": false,
+            "readonly": true,
+            "related": [
+              "partner_id",
+              "partner_gid"
+            ],
+            "required": false,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u516c\u53f8\u6570\u636e\u5e93ID",
+            "views": {}
+          },
+          "incoterm_id": {
+            "type": "many2one",
+            "change_default": false,
+            "company_dependent": false,
+            "context": {},
+            "depends": [],
+            "domain": [],
+            "help": "\u56fd\u9645\u5546\u4e1a\u6761\u6b3e\u662f\u4e00\u7cfb\u5217\u7528\u4e8e\u56fd\u9645\u4ea4\u6613\u7684\u4e8b\u5148\u5b9a\u4e49\u7684\u5546\u4e1a\u6761\u6b3e\u3002",
+            "manual": false,
+            "readonly": false,
+            "relation": "account.incoterms",
+            "required": false,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u9ed8\u8ba4\u56fd\u9645\u8d38\u6613\u672f\u8bed",
+            "views": {}
+          }
+        },
+        "toolbar": {
+          "print": [
+            {
+              "id": 75,
+              "name": "\u9884\u89c8\u5185\u90e8\u62a5\u8868",
+              "type": "ir.actions.report",
+              "binding_type": "report",
+              "model": "res.company",
+              "report_type": "qweb-pdf",
+              "report_name": "web.preview_internalreport",
+              "report_file": "web.preview_internalreport",
+              "groups_id": [],
+              "multi": false,
+              "paperformat_id": false,
+              "print_report_name": false,
+              "attachment_use": false,
+              "attachment": false,
+              "help": false,
+              "binding_model_id": [
+                83,
+                "\u516c\u53f8"
+              ],
+              "create_uid": [
+                1,
+                "OdooBot"
+              ],
+              "create_date": "2019-04-25 03:09:04",
+              "write_uid": [
+                1,
+                "OdooBot"
+              ],
+              "write_date": "2019-04-25 03:09:04",
+              "xml_id": "web.action_report_internalpreview",
+              "display_name": "\u9884\u89c8\u5185\u90e8\u62a5\u8868",
+              "__last_update": "2019-04-25 03:09:04",
+              "string": "\u9884\u89c8\u5185\u90e8\u62a5\u8868"
+            },
+            {
+              "id": 76,
+              "name": "\u9884\u89c8\u5916\u90e8\u62a5\u8868",
+              "type": "ir.actions.report",
+              "binding_type": "report",
+              "model": "res.company",
+              "report_type": "qweb-pdf",
+              "report_name": "web.preview_externalreport",
+              "report_file": "web.preview_externalreport",
+              "groups_id": [],
+              "multi": false,
+              "paperformat_id": false,
+              "print_report_name": false,
+              "attachment_use": false,
+              "attachment": false,
+              "help": false,
+              "binding_model_id": [
+                83,
+                "\u516c\u53f8"
+              ],
+              "create_uid": [
+                1,
+                "OdooBot"
+              ],
+              "create_date": "2019-04-25 03:09:04",
+              "write_uid": [
+                1,
+                "OdooBot"
+              ],
+              "write_date": "2019-04-25 03:09:04",
+              "xml_id": "web.action_report_externalpreview",
+              "display_name": "\u9884\u89c8\u5916\u90e8\u62a5\u8868",
+              "__last_update": "2019-04-25 03:09:04",
+              "string": "\u9884\u89c8\u5916\u90e8\u62a5\u8868"
+            }
+          ],
+          "action": [],
+          "relate": []
+        }
+      },
+      "search": {
+        "model": "res.company",
+        "field_parent": false,
+        "arch": "<search string=\"Companies\"><field name=\"name\" modifiers=\"{&quot;required&quot;: true}\"/></search>",
+        "type": "search",
+        "name": "default",
+        "fields": {
+          "name": {
+            "type": "char",
+            "change_default": false,
+            "company_dependent": false,
+            "depends": [
+              "partner_id.name"
+            ],
+            "manual": false,
+            "readonly": false,
+            "related": [
+              "partner_id",
+              "name"
+            ],
+            "required": true,
+            "searchable": true,
+            "sortable": true,
+            "store": true,
+            "string": "\u516c\u53f8\u540d\u79f0",
+            "translate": false,
+            "trim": true,
+            "views": {}
+          }
+        }
+      }
+    },
+    "fields": {
+      "name": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [
+          "partner_id.name"
+        ],
+        "manual": false,
+        "readonly": false,
+        "related": [
+          "partner_id",
+          "name"
+        ],
+        "required": true,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u516c\u53f8\u540d\u79f0",
+        "translate": false,
+        "trim": true
+      },
+      "sequence": {
+        "type": "integer",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "group_operator": "sum",
+        "help": "\u7528\u4e8e\u5728\u516c\u53f8\u5207\u6362\u5668\u4e2d\u5bf9\u516c\u53f8\u8fdb\u884c\u6392\u5e8f",
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u5e8f\u53f7"
+      },
+      "parent_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "res.company",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u4e0a\u7ea7\u516c\u53f8"
+      },
+      "child_ids": {
+        "type": "one2many",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "res.company",
+        "relation_field": "parent_id",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u4e0b\u7ea7\u516c\u53f8"
+      },
+      "partner_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "res.partner",
+        "required": true,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u4e1a\u52a1\u4f19\u4f34"
+      },
+      "report_header": {
+        "type": "text",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "help": "\u5c06\u51fa\u73b0\u5728\u6253\u5370\u7684\u62a5\u8868\u7684\u53f3\u4e0a\u89d2(\u62a5\u8868\u9875\u7709)\u3002",
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u516c\u53f8\u53e3\u53f7",
+        "translate": false
+      },
+      "report_footer": {
+        "type": "text",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "help": "\u663e\u793a\u5728\u6240\u6709\u62a5\u544a\u4e0b\u65b9\u7684\u9875\u811a\u6587\u5b57\u3002",
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u62a5\u8868\u9875\u811a",
+        "translate": true
+      },
+      "logo": {
+        "type": "binary",
+        "attachment": false,
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [
+          "partner_id.image"
+        ],
+        "help": "\u8be5\u5b57\u6bb5\u4fdd\u5b58\u7684\u56fe\u50cf\u7528\u4f5c\u8054\u7cfb\u4eba\u7684\u5934\u50cf\uff0c\u9650\u5236\u4e3a1024x1024px",
+        "manual": false,
+        "readonly": false,
+        "related": [
+          "partner_id",
+          "image"
+        ],
+        "required": false,
+        "searchable": true,
+        "sortable": false,
+        "store": false,
+        "string": "\u516c\u53f8 Logo"
+      },
+      "logo_web": {
+        "type": "binary",
+        "attachment": false,
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [
+          "partner_id",
+          "partner_id.image"
+        ],
+        "manual": false,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u7f51\u9875\u5fbd\u6807"
+      },
+      "currency_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "res.currency",
+        "required": true,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u5e01\u79cd"
+      },
+      "user_ids": {
+        "type": "many2many",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "res.users",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u63a5\u53d7\u7684\u7528\u6237"
+      },
+      "account_no": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u79d1\u76ee\u53f7\u7801",
+        "translate": false,
+        "trim": true
+      },
+      "street": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": false,
+        "sortable": false,
+        "store": false,
+        "string": "\u8857\u9053",
+        "translate": false,
+        "trim": true
+      },
+      "street2": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": false,
+        "sortable": false,
+        "store": false,
+        "string": "\u8857\u9053 2",
+        "translate": false,
+        "trim": true
+      },
+      "zip": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": false,
+        "sortable": false,
+        "store": false,
+        "string": "\u90ae\u653f\u7f16\u7801",
+        "translate": false,
+        "trim": true
+      },
+      "city": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": false,
+        "sortable": false,
+        "store": false,
+        "string": "\u57ce\u5e02",
+        "translate": false,
+        "trim": true
+      },
+      "state_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "res.country.state",
+        "required": false,
+        "searchable": false,
+        "sortable": false,
+        "store": false,
+        "string": "\u72b6\u6001"
+      },
+      "bank_ids": {
+        "type": "one2many",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "help": "\u4e0e\u672c\u516c\u53f8\u76f8\u5173\u7684\u94f6\u884c\u8d26\u6237",
+        "manual": false,
+        "readonly": false,
+        "relation": "res.partner.bank",
+        "relation_field": "company_id",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u94f6\u884c\u5e10\u6237"
+      },
+      "country_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "res.country",
+        "required": false,
+        "searchable": false,
+        "sortable": false,
+        "store": false,
+        "string": "\u56fd\u5bb6/\u5730\u533a"
+      },
+      "email": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [
+          "partner_id.email"
+        ],
+        "manual": false,
+        "readonly": false,
+        "related": [
+          "partner_id",
+          "email"
+        ],
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "Email",
+        "translate": false,
+        "trim": true
+      },
+      "phone": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [
+          "partner_id.phone"
+        ],
+        "manual": false,
+        "readonly": false,
+        "related": [
+          "partner_id",
+          "phone"
+        ],
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u7535\u8bdd",
+        "translate": false,
+        "trim": true
+      },
+      "website": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [
+          "partner_id.website"
+        ],
+        "manual": false,
+        "readonly": false,
+        "related": [
+          "partner_id",
+          "website"
+        ],
+        "required": false,
+        "searchable": true,
+        "sortable": false,
+        "store": false,
+        "string": "\u7f51\u7ad9",
+        "translate": false,
+        "trim": true
+      },
+      "vat": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [
+          "partner_id.vat"
+        ],
+        "help": "\u7a0e\u53f7\u3002 \u5982\u679c\u8054\u7cfb\u4eba\u9700\u7f34\u7eb3\u7a0e\u6b3e\uff0c\u8bf7\u586b\u5199\u3002 \u7528\u4e8e\u67d0\u4e9b\u6cd5\u5f8b\u58f0\u660e\u3002",
+        "manual": false,
+        "readonly": false,
+        "related": [
+          "partner_id",
+          "vat"
+        ],
+        "required": false,
+        "searchable": true,
+        "sortable": false,
+        "store": false,
+        "string": "\u7a0e\u53f7",
+        "translate": false,
+        "trim": true
+      },
+      "company_registry": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u516c\u53f8\u6ce8\u518c",
+        "translate": false,
+        "trim": true
+      },
+      "paperformat_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "report.paperformat",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u7eb8\u5f20\u683c\u5f0f"
+      },
+      "external_report_layout_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "ir.ui.view",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u6587\u6863\u6a21\u677f"
+      },
+      "base_onboarding_company_state": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "not_done",
+            "\u5c1a\u672a\u5b8c\u6210"
+          ],
+          [
+            "just_done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "done",
+            "\u5b8c\u6210"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u516c\u53f8\u72b6\u6001"
+      },
+      "resource_calendar_ids": {
+        "type": "one2many",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "resource.calendar",
+        "relation_field": "company_id",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u5de5\u4f5c\u65f6\u95f4"
+      },
+      "resource_calendar_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "resource.calendar",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u9ed8\u8ba4\u5de5\u4f5c\u65f6\u95f4"
+      },
+      "nomenclature_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "barcode.nomenclature",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u547d\u540d\u89c4\u5219"
+      },
+      "catchall": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": true,
+        "required": false,
+        "searchable": false,
+        "sortable": false,
+        "store": false,
+        "string": "\u9884\u8bbe\u90ae\u4ef6",
+        "translate": false,
+        "trim": true
+      },
+      "partner_gid": {
+        "type": "integer",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [
+          "partner_id.partner_gid"
+        ],
+        "group_operator": "sum",
+        "manual": false,
+        "readonly": true,
+        "related": [
+          "partner_id",
+          "partner_gid"
+        ],
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u516c\u53f8\u6570\u636e\u5e93ID"
+      },
+      "snailmail_color": {
+        "type": "boolean",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u989c\u8272"
+      },
+      "snailmail_duplex": {
+        "type": "boolean",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u53cc\u9762"
+      },
+      "propagation_minimum_delta": {
+        "type": "integer",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "group_operator": "sum",
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u8fde\u63a5\u5728\u4e00\u8d77\u7684\u5e93\u5b58\u79fb\u52a8\u7684\u65e5\u671f\u53d8\u5316\u4f20\u64ad\u7684\u6700\u5c0f\u5dee\u503c\u3002"
+      },
+      "internal_transit_location_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "help": "\u672c\u6280\u672f\u5b57\u6bb5\u7528\u4e8e\u5bf9\u5c5e\u4e8e\u6b64\u516c\u53f8\u4e4b\u95f4\u7684\u4ed3\u5e93\u8fdb\u884c\u8865\u7ed9\u7684\u8def\u7ebf\u3002",
+        "manual": false,
+        "readonly": false,
+        "relation": "stock.location",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u5185\u90e8\u4e2d\u8f6c\u4f4d\u7f6e"
+      },
+      "payment_acquirer_onboarding_state": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "not_done",
+            "\u5c1a\u672a\u5b8c\u6210"
+          ],
+          [
+            "just_done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "done",
+            "\u5b8c\u6210"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u5165\u804c\u652f\u4ed8\u6536\u5355\u673a\u6784\u7684\u72b6\u6001"
+      },
+      "payment_onboarding_payment_method": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "paypal",
+            "PayPal"
+          ],
+          [
+            "stripe",
+            "\u6761\u5e26"
+          ],
+          [
+            "manual",
+            "\u624b\u52a8"
+          ],
+          [
+            "other",
+            "\u5176\u4ed6"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u9009\u62e9\u4ed8\u6b3e\u65b9\u5f0f"
+      },
+      "fiscalyear_last_day": {
+        "type": "integer",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "group_operator": "sum",
+        "manual": false,
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u4f1a\u8ba1\u5e74\u5ea6\u7684\u6700\u540e\u4e00\u5929"
+      },
+      "fiscalyear_last_month": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "selection": [
+          [
+            1,
+            "\u4e00\u6708"
+          ],
+          [
+            2,
+            "\u4e8c\u6708"
+          ],
+          [
+            3,
+            "\u4e09\u6708"
+          ],
+          [
+            4,
+            "\u56db\u6708"
+          ],
+          [
+            5,
+            "\u4e94\u6708"
+          ],
+          [
+            6,
+            "\u516d\u6708"
+          ],
+          [
+            7,
+            "\u4e03\u6708"
+          ],
+          [
+            8,
+            "\u516b\u6708"
+          ],
+          [
+            9,
+            "\u4e5d\u6708"
+          ],
+          [
+            10,
+            "\u5341\u6708"
+          ],
+          [
+            11,
+            "\u5341\u4e00\u6708"
+          ],
+          [
+            12,
+            "\u5341\u4e8c\u6708"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u4f1a\u8ba1\u5e74\u5ea6\u7684\u6700\u540e\u4e00\u4e2a\u6708"
+      },
+      "period_lock_date": {
+        "type": "date",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "help": "\u53ea\u6709\u5e26\u6709 '\u987e\u95ee' \u89d2\u8272\u7684\u7528\u6237\u53ef\u4ee5\u7f16\u8f91\u4ece\u4ee5\u524d\u5230\u4eca\u5929\u7684\u8d26\u6237\u3002\u4f8b\u5982\uff0c\u5728\u4e00\u4e2a\u5f00\u653e\u7684\u4f1a\u8ba1\u5e74\u5ea6\u5185\u4f7f\u7528\u5b83\u8fdb\u884c\u5468\u671f\u9501\u5b9a\u3002",
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u975e\u987e\u95ee\u7684\u9501\u5b9a\u65e5\u671f"
+      },
+      "fiscalyear_lock_date": {
+        "type": "date",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "help": "\u6ca1\u6709\u5305\u542b\u987e\u95ee\u7684\u7528\u6237\u53ef\u4ee5\u7f16\u8f91\u4e4b\u524d\u5230\u4eca\u5929\u7684\u8d26\u6237\u3002\u4f8b\u5982\u7528\u5b83\u6765\u505a\u8d22\u5e74\u7684\u9501\u5b9a\u3002",
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u9501\u5b9a\u65e5\u671f"
+      },
+      "transfer_account_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [
+          [
+            "reconcile",
+            "=",
+            true
+          ],
+          [
+            "user_type_id.id",
+            "=",
+            5
+          ],
+          [
+            "deprecated",
+            "=",
+            false
+          ]
+        ],
+        "help": "\u4e2d\u95f4\u79d1\u76ee\uff0c\u7528\u4e8e\u4ece\u4e00\u4e2a\u6d41\u52a8\u6027\u79d1\u76ee\u5230\u53e6\u5916\u4e00\u4e2a\u79d1\u76ee\u8f6c\u8d26",
+        "manual": false,
+        "readonly": false,
+        "relation": "account.account",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u94f6\u884c\u95f4\u8f6c\u8d26\u79d1\u76ee"
+      },
+      "expects_chart_of_accounts": {
+        "type": "boolean",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u9884\u8ba1\u4f1a\u8ba1\u79d1\u76ee\u8868"
+      },
+      "chart_template_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "help": "\u516c\u53f8\u7684\u8868\u5355\u6a21\u677f",
+        "manual": false,
+        "readonly": false,
+        "relation": "account.chart.template",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u8868\u6a21\u677f"
+      },
+      "bank_account_code_prefix": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u94f6\u884c\u79d1\u76ee\u7684\u524d\u7f00",
+        "translate": false,
+        "trim": true
+      },
+      "cash_account_code_prefix": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u73b0\u91d1\u79d1\u76ee\u7684\u524d\u7f00",
+        "translate": false,
+        "trim": true
+      },
+      "transfer_account_code_prefix": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u8f6c\u8d26\u5e10\u6237\u7684\u524d\u7f00",
+        "translate": false,
+        "trim": true
+      },
+      "account_sale_tax_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "account.tax",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u9ed8\u8ba4\u9500\u552e\u7a0e"
+      },
+      "account_purchase_tax_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "account.tax",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u9ed8\u8ba4\u8fdb\u9879\u7a0e"
+      },
+      "tax_cash_basis_journal_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "account.journal",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u73b0\u91d1\u6536\u4ed8\u5236\u65e5\u8bb0\u8d26"
+      },
+      "tax_calculation_rounding_method": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "round_per_line",
+            "\u6bcf\u884c\u820d\u5165"
+          ],
+          [
+            "round_globally",
+            "\u6574\u4f53\u820d\u5165"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u7a0e\u7387\u8ba1\u7b97\u7684\u820d\u5165\u65b9\u6cd5"
+      },
+      "currency_exchange_journal_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [
+          [
+            "type",
+            "=",
+            "general"
+          ]
+        ],
+        "manual": false,
+        "readonly": false,
+        "relation": "account.journal",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u6c47\u5151\u589e\u76ca\u6216\u635f\u5931\u65e5\u8bb0\u8d26"
+      },
+      "income_currency_exchange_account_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [
+          "currency_exchange_journal_id.default_credit_account_id"
+        ],
+        "domain": "[('internal_type', '=', 'other'), ('deprecated', '=', False), ('company_id', '=', id)]",
+        "help": "\u5b83\u5c06\u5145\u5f53\u8d37\u65b9\u91d1\u989d\u7684\u9ed8\u8ba4\u79d1\u76ee",
+        "manual": false,
+        "readonly": false,
+        "related": [
+          "currency_exchange_journal_id",
+          "default_credit_account_id"
+        ],
+        "relation": "account.account",
+        "required": false,
+        "searchable": true,
+        "sortable": false,
+        "store": false,
+        "string": "\u6c47\u7387\u589e\u76ca\u79d1\u76ee"
+      },
+      "expense_currency_exchange_account_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [
+          "currency_exchange_journal_id.default_debit_account_id"
+        ],
+        "domain": "[('internal_type', '=', 'other'), ('deprecated', '=', False), ('company_id', '=', id)]",
+        "help": "\u5b83\u5c06\u4f5c\u4e3a\u4e00\u4e2a\u9ed8\u8ba4\u501f\u65b9\u79d1\u76ee",
+        "manual": false,
+        "readonly": false,
+        "related": [
+          "currency_exchange_journal_id",
+          "default_debit_account_id"
+        ],
+        "relation": "account.account",
+        "required": false,
+        "searchable": true,
+        "sortable": false,
+        "store": false,
+        "string": "\u6c47\u7387\u635f\u5931\u79d1\u76ee"
+      },
+      "anglo_saxon_accounting": {
+        "type": "boolean",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u4f7f\u7528anglo-saxon\u4f1a\u8ba1"
+      },
+      "property_stock_account_input_categ_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "account.account",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u5e93\u5b58\u8ba1\u4ef7\u7684\u5165\u5e93\u79d1\u76ee"
+      },
+      "property_stock_account_output_categ_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "account.account",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u5e93\u5b58\u8ba1\u4ef7\u7684\u51fa\u8d27\u79d1\u76ee"
+      },
+      "property_stock_valuation_account_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": false,
+        "relation": "account.account",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u5e93\u5b58\u8ba1\u4ef7\u7684\u79d1\u76ee\u6a21\u677f"
+      },
+      "bank_journal_ids": {
+        "type": "one2many",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [
+          "bank_journal_ids.type"
+        ],
+        "domain": [
+          [
+            "type",
+            "=",
+            "bank"
+          ]
+        ],
+        "manual": false,
+        "readonly": false,
+        "relation": "account.journal",
+        "relation_field": "company_id",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u94f6\u884c\u65e5\u8bb0\u8d26"
+      },
+      "overdue_msg": {
+        "type": "text",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u903e\u671f\u8ffd\u6b3e\u6d88\u606f",
+        "translate": true
+      },
+      "tax_exigibility": {
+        "type": "boolean",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u4f7f\u7528\u73b0\u91d1\u6536\u4ed8\u5236"
+      },
+      "account_bank_reconciliation_start": {
+        "type": "date",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "help": "\u94f6\u884c\u4f59\u989d\u8c03\u8282\u5668\u4e0d\u4f1a\u8981\u6c42\u652f\u4ed8\u5728\u8fd9\u4e2a\u65e5\u671f\u4e4b\u524d\u7684\u4ed8\u6b3e\u3002\n                    \u5982\u679c\u4f60\u5b89\u88c5\u4f1a\u8ba1\uff0c\u4f7f\u7528\u53d1\u7968\u4e00\u6bb5\u65f6\u95f4\u540e\uff0c\u8fd9\u4e2a\u662f\u6709\u7528\u7684\uff0c\u5e76\u4e14\n                    \u4e0d\u4f1a\u628a\u6240\u6709\u8fc7\u53bb\u7684\u4ed8\u6b3e\u4e0e\u94f6\u884c\u7ed3\u5355\u76f8\u8c03\u8282\u3002",
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u94f6\u884c\u5bf9\u8d26\u9608\u503c"
+      },
+      "incoterm_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "help": "\u56fd\u9645\u5546\u4e1a\u6761\u6b3e\u662f\u4e00\u7cfb\u5217\u7528\u4e8e\u56fd\u9645\u4ea4\u6613\u7684\u4e8b\u5148\u5b9a\u4e49\u7684\u5546\u4e1a\u6761\u6b3e\u3002",
+        "manual": false,
+        "readonly": false,
+        "relation": "account.incoterms",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u9ed8\u8ba4\u56fd\u9645\u8d38\u6613\u672f\u8bed"
+      },
+      "invoice_reference_type": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "help": "\u60a8\u53ef\u4ee5\u5728\u8fd9\u91cc\u8bbe\u7f6e\u9ed8\u8ba4\u8054\u7cfb\u65b9\u5f0f\uff0c\u8be5\u8054\u7cfb\u65b9\u5f0f\u5c06\u663e\u793a\u5728\u5ba2\u6237\u53d1\u7968\u4e0a\uff0c\u4e00\u65e6\u9a8c\u8bc1\uff0c\u4ee5\u5e2e\u52a9\u5ba2\u6237\u5728\u4ed8\u6b3e\u65f6\u53c2\u8003\u8be5\u53d1\u7968\u8054\u7cfb\u3002",
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "invoice_number",
+            "\u57fa\u4e8e\u53d1\u7968\u53f7\u7801"
+          ],
+          [
+            "partner",
+            "\u57fa\u4e8e\u5ba2\u6237"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u9ed8\u8ba4\u4fe1\u606f\u7c7b\u578b"
+      },
+      "qr_code": {
+        "type": "boolean",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u663e\u793aSEPA QR\u7801"
+      },
+      "invoice_is_email": {
+        "type": "boolean",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u9ed8\u8ba4\u90ae\u4ef6"
+      },
+      "invoice_is_print": {
+        "type": "boolean",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u901a\u8fc7\u9ed8\u8ba4\u503c\u6253\u5370"
+      },
+      "account_opening_move_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "help": "\u6b64\u65e5\u8bb0\u8d26\u5206\u5f55\u5305\u542b\u516c\u53f8\u6240\u6709\u79d1\u76ee\u7684\u671f\u521d\u4f59\u989d\u3002",
+        "manual": false,
+        "readonly": false,
+        "relation": "account.move",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u671f\u521d\u65e5\u8bb0\u8d26\u5206\u5f55"
+      },
+      "account_opening_journal_id": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [
+          "account_opening_move_id.journal_id"
+        ],
+        "domain": [],
+        "help": "\u516c\u53f8\u4f1a\u8ba1\u7684\u671f\u521d\u51ed\u8bc1\u5df2\u8fc7\u8d26\u3002",
+        "manual": false,
+        "readonly": false,
+        "related": [
+          "account_opening_move_id",
+          "journal_id"
+        ],
+        "relation": "account.journal",
+        "required": false,
+        "searchable": true,
+        "sortable": false,
+        "store": false,
+        "string": "\u671f\u521d\u65e5\u8bb0\u8d26"
+      },
+      "account_opening_date": {
+        "type": "date",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [
+          "account_opening_move_id.date"
+        ],
+        "help": "\u516c\u53f8\u5f00\u6237\u51ed\u8bc1\u7684\u53d1\u5e03\u65e5\u3002",
+        "manual": false,
+        "readonly": false,
+        "related": [
+          "account_opening_move_id",
+          "date"
+        ],
+        "required": false,
+        "searchable": true,
+        "sortable": false,
+        "store": false,
+        "string": "\u671f\u521d\u65e5\u671f"
+      },
+      "account_setup_bank_data_state": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "not_done",
+            "\u5c1a\u672a\u5b8c\u6210"
+          ],
+          [
+            "just_done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "done",
+            "\u5b8c\u6210"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u6709\u5f85\u88ab\u786e\u8ba4\u7684\u94f6\u884c\u6570\u636e\u6b65\u9aa4\u7684\u72b6\u6001"
+      },
+      "account_setup_fy_data_state": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "not_done",
+            "\u5c1a\u672a\u5b8c\u6210"
+          ],
+          [
+            "just_done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "done",
+            "\u5b8c\u6210"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u6709\u5f85\u88ab\u786e\u8ba4\u7684\u4f1a\u8ba1\u5e74\u5ea6\u6b65\u9aa4\u7684\u72b6\u6001"
+      },
+      "account_setup_coa_state": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "not_done",
+            "\u5c1a\u672a\u5b8c\u6210"
+          ],
+          [
+            "just_done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "done",
+            "\u5b8c\u6210"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u79d1\u76ee\u72b6\u6001"
+      },
+      "account_onboarding_invoice_layout_state": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "not_done",
+            "\u5c1a\u672a\u5b8c\u6210"
+          ],
+          [
+            "just_done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "done",
+            "\u5b8c\u6210"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u6709\u5f85\u88ab\u786e\u8ba4\u7684\u53d1\u7968\u6b65\u9aa4\u7684\u72b6\u6001"
+      },
+      "account_onboarding_sample_invoice_state": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "not_done",
+            "\u5c1a\u672a\u5b8c\u6210"
+          ],
+          [
+            "just_done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "done",
+            "\u5b8c\u6210"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u6709\u5f85\u88ab\u786e\u8ba4\u7684\u6837\u54c1\u62a5\u4ef7\u5355\u6b65\u9aa4\u7684\u72b6\u6001"
+      },
+      "account_onboarding_sale_tax_state": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "not_done",
+            "\u5c1a\u672a\u5b8c\u6210"
+          ],
+          [
+            "just_done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "done",
+            "\u5b8c\u6210"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u6709\u5f85\u88ab\u786e\u8ba4\u7684\u62a5\u4ef7\u5355\u6b65\u9aa4\u7684\u72b6\u6001"
+      },
+      "account_invoice_onboarding_state": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "not_done",
+            "\u5c1a\u672a\u5b8c\u6210"
+          ],
+          [
+            "just_done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "closed",
+            "\u5df2\u5173\u95ed"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u5904\u4e8e\u4f1a\u8ba1\u53d1\u7968\u9762\u677f\u7684\u72b6\u6001"
+      },
+      "account_dashboard_onboarding_state": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "not_done",
+            "\u5c1a\u672a\u5b8c\u6210"
+          ],
+          [
+            "just_done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "closed",
+            "\u5df2\u5173\u95ed"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u5904\u4e8e\u4f1a\u8ba1\u9762\u677f\u7684\u72b6\u6001"
+      },
+      "manufacturing_lead": {
+        "type": "float",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "group_operator": "sum",
+        "help": "\u6bcf\u4e2a\u5236\u9020\u4f5c\u4e1a\u7684\u786e\u4fdd\u5929\u6570",
+        "manual": false,
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u5236\u9020\u63d0\u524d\u671f(\u65e5)"
+      },
+      "po_lead": {
+        "type": "float",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "group_operator": "sum",
+        "help": "\u4f9b\u5e94\u5546\u4ea4\u8d27\u63d0\u524d\u671f\u3002\u5f53\u7cfb\u7edf\u751f\u6210\u9700\u6c42\u4ea7\u54c1\u7684\u91c7\u8d2d\u8ba2\u5355\uff0c\u5b83\u4eec\u9700\u8981\u63d0\u524d\u4e00\u4e9b\u5929\u88ab\u4e0b\u5355\u4ee5\u5e94\u4ed8\u4e0d\u53ef\u9884\u671f\u7684\u4f9b\u5e94\u5546\u4ea4\u8d27\u5ef6\u671f",
+        "manual": false,
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u91c7\u8d2d\u63d0\u524d\u65f6\u95f4"
+      },
+      "po_lock": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "help": "\u91c7\u8d2d\u8ba2\u5355\u5728\u8ba2\u5355\u786e\u8ba4\u540e\u60a8\u60f3\u8981\u91c7\u8d2d\u8ba2\u5355\u65f6\u53ef\u4ee5\u4fee\u6539",
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "edit",
+            "\u5141\u8bb8\u4fee\u6539\u91c7\u8d2d\u8ba2\u5355"
+          ],
+          [
+            "lock",
+            "\u7981\u6b62\u4fee\u6539\u5df2\u786e\u8ba4\u8ba2\u5355"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u9500\u552e\u8ba2\u5355\u4fee\u6539"
+      },
+      "po_double_validation": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "help": "\u4e3a\u91c7\u8d2d\u63d0\u4f9b\u53cc\u91cd\u9a8c\u8bc1\u673a\u5236",
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "one_step",
+            "\u76f4\u63a5\u786e\u8ba4\u8ba2\u5355"
+          ],
+          [
+            "two_step",
+            "2\u7ea7\u5ba1\u6279\u786e\u8ba4\u91c7\u8d2d\u8ba2\u5355"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u6279\u51c6\u7b49\u7ea7"
+      },
+      "po_double_validation_amount": {
+        "type": "monetary",
+        "change_default": false,
+        "company_dependent": false,
+        "currency_field": "currency_id",
+        "depends": [],
+        "group_operator": "sum",
+        "help": "\u4e24\u6b65\u9a8c\u8bc1\u6240\u9700\u8981\u7684\u6700\u5c0f\u91d1\u989d",
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u518d\u6b21\u9a8c\u8bc1\u91d1\u989d"
+      },
+      "invoice_is_snailmail": {
+        "type": "boolean",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u9ed8\u8ba4\u4ee5\u4fe1\u4ef6\u53d1\u9001"
+      },
+      "sale_note": {
+        "type": "text",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u9ed8\u8ba4\u6761\u6b3e\u548c\u6761\u4ef6",
+        "translate": true
+      },
+      "portal_confirmation_sign": {
+        "type": "boolean",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u5728\u7ebf\u7b7e\u540d"
+      },
+      "portal_confirmation_pay": {
+        "type": "boolean",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u5728\u7ebf\u652f\u4ed8"
+      },
+      "quotation_validity_days": {
+        "type": "integer",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "group_operator": "sum",
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u9ed8\u8ba4\u62a5\u4ef7\u6709\u6548\u671f\uff08\u65e5\uff09"
+      },
+      "sale_quotation_onboarding_state": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "not_done",
+            "\u5c1a\u672a\u5b8c\u6210"
+          ],
+          [
+            "just_done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "closed",
+            "\u5df2\u5173\u95ed"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u6b63\u8fdb\u884c\u9500\u552e\u9762\u677f\u7684\u72b6\u6001"
+      },
+      "sale_onboarding_order_confirmation_state": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "not_done",
+            "\u5c1a\u672a\u5b8c\u6210"
+          ],
+          [
+            "just_done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "done",
+            "\u5b8c\u6210"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u6709\u5f85\u88ab\u786e\u8ba4\u7684\u8ba2\u5355\u6b65\u9aa4\u7684\u72b6\u6001"
+      },
+      "sale_onboarding_sample_quotation_state": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "not_done",
+            "\u5c1a\u672a\u5b8c\u6210"
+          ],
+          [
+            "just_done",
+            "\u5b8c\u6210"
+          ],
+          [
+            "done",
+            "\u5b8c\u6210"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u6709\u5f85\u88ab\u786e\u8ba4\u7684\u6837\u54c1\u62a5\u4ef7\u5355\u6b65\u9aa4\u7684\u72b6\u6001"
+      },
+      "sale_onboarding_payment_method": {
+        "type": "selection",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "selection": [
+          [
+            "digital_signature",
+            "\u5728\u7ebf\u7b7e\u540d"
+          ],
+          [
+            "paypal",
+            "PayPal"
+          ],
+          [
+            "stripe",
+            "\u6761\u5e26"
+          ],
+          [
+            "other",
+            "\u5176\u5b83\u65b9\u5f0f\u652f\u4ed8"
+          ],
+          [
+            "manual",
+            "\u7535\u6c47"
+          ]
+        ],
+        "sortable": true,
+        "store": true,
+        "string": "\u8bf7\u9009\u62e9\u4ed8\u6b3e\u65b9\u5f0f"
+      },
+      "security_lead": {
+        "type": "float",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "group_operator": "sum",
+        "help": "\u5411\u5ba2\u6237\u627f\u8bfa\u65e5\u671f\u7684\u8bef\u5dee\u5e45\u5ea6\u3002\u4ea7\u54c1\u5c06\u88ab\u6bd4\u5b9e\u9645\u627f\u8bfa\u7684\u65e5\u671f\u63d0\u524d\u5f88\u591a\u5929\u5b89\u6392\u91c7\u8d2d\u548c\u4ea4\u8d27\uff0c\u4ee5\u5e94\u5bf9\u4f9b\u5e94\u94fe\u4e2d\u7684\u610f\u5916\u5ef6\u8bef\u3002",
+        "manual": false,
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u9500\u552e\u5b89\u5168\u5929\u6570"
+      },
+      "id": {
+        "type": "integer",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "ID"
+      },
+      "display_name": {
+        "type": "char",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [
+          "name"
+        ],
+        "manual": false,
+        "readonly": true,
+        "required": false,
+        "searchable": false,
+        "sortable": false,
+        "store": false,
+        "string": "\u663e\u793a\u540d\u79f0",
+        "translate": false,
+        "trim": true
+      },
+      "create_uid": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": true,
+        "relation": "res.users",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u521b\u5efa\u4eba"
+      },
+      "create_date": {
+        "type": "datetime",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u521b\u5efa\u65f6\u95f4"
+      },
+      "write_uid": {
+        "type": "many2one",
+        "change_default": false,
+        "company_dependent": false,
+        "context": {},
+        "depends": [],
+        "domain": [],
+        "manual": false,
+        "readonly": true,
+        "relation": "res.users",
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u6700\u540e\u66f4\u65b0\u8005"
+      },
+      "write_date": {
+        "type": "datetime",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [],
+        "manual": false,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sortable": true,
+        "store": true,
+        "string": "\u6700\u540e\u66f4\u65b0\u65f6\u95f4"
+      },
+      "__last_update": {
+        "type": "datetime",
+        "change_default": false,
+        "company_dependent": false,
+        "depends": [
+          "create_date",
+          "write_date"
+        ],
+        "manual": false,
+        "readonly": true,
+        "required": false,
+        "searchable": false,
+        "sortable": false,
+        "store": false,
+        "string": "\u6700\u540e\u4fee\u6539\u65e5"
+      }
+    },
+    "filters": []
+  }
+}

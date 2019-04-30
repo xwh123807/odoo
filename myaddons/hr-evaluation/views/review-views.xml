@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<odoo>
+	<data>
+		<record model="ir.ui.view" id="review_type_list">
+			<field name="name">Type</field>
+			<field name="model">review.type</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+				</tree>
+			</field>
+		</record>
+		
+		<record model="ir.actions.act_window"
+			id="review_type_action_window">
+			<field name="name">Type</field>
+			<field name="res_model">review.type</field>
+			<field name="view_mode">tree,form</field>
+		</record>		
+		
+		<menuitem name="Review" id="review_menu_1_list"
+			parent="hr_evaluation_menu_root" />
+		<menuitem name="Type" id="review_menu_1_list_menu_1"
+			parent="review_menu_1_list"
+			action="review_type_action_window" />
+	</data>
+</odoo>
