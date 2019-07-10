@@ -1,2 +1,4 @@
 /odoo-env/
-/*/*.pyc
+*.py[cod]
+__pycache__
+/workdir/

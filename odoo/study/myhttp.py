@@ -19,6 +19,14 @@ class TestHttp(odoo.tests.web.WebTestCase):
         result = self.post("/web/dataset/search_read", {
             'model': 'res.users',
             'limit': 80,
+            'fields': [],
+            'context': {
+            }
+        })
+        self.assertEqual(3, result['length'])
+        result = self.post("/web/dataset/search_read", {
+            'model': 'res.users',
+            'limit': 80,
             'fields': ["name", "login", "lang", "login_date"],
             'context': {
             },
@@ -47,12 +55,32 @@ class TestHttp(odoo.tests.web.WebTestCase):
             }
         })
 
-    def test_read(self):
+    def test_readCompany(self):
         result = self.post("/web/dataset/call_kw/res.company/read", {
-            'args': [[2]],
+            'args': [[1]],
             'kwargs': {
-                'context': {}
             },
             'method': 'read',
             'model': 'res.company'
         })
+        self.assertEqual(1, result[0]['id'])
+
+    def test_readUser(self):
+        result = self.post("/web/dataset/call_kw/res.users/read", {
+            'args': [6],
+            'method': 'read',
+            'model': 'res.users',
+            'kwargs': {
+            }
+        })
+        self.assertEqual(6, result[0]['id'])
+
+    def test_load_menus(self):
+        result = self.post("/web/dataset/call_kw/ir.ui.menu/load_menus", {
+            'args': [False],
+            'method': "load_menus",
+            'model': "ir.ui.menu",
+            'kwargs': {
+            }
+        })
+        self.assertEqual('root', result['name'])

@@ -114,7 +114,7 @@ class configmanager(object):
         group.add_option("-P", "--import-partial", dest="import_partial", my_default='',
                         help="Use this for big data importation, if it crashes you will be able to continue at the current state. Provide a filename to store intermediate importation states.")
         group.add_option("--pidfile", dest="pidfile", help="file where the server pid will be stored")
-        group.add_option("--addons-path", dest="addons_path",
+        group.add_option("--addons-path", dest="addons_path", my_default="addons,myaddons",
                          help="specify additional addons paths (separated by commas).",
                          action="callback", callback=self._check_addons_path, nargs=1, type="string")
         group.add_option("--load", dest="server_wide_modules", help="Comma-separated list of server-wide modules.", my_default='base,web')
@@ -205,16 +205,16 @@ class configmanager(object):
         parser.add_option_group(group)
 
         group = optparse.OptionGroup(parser, "Database related options")
-        group.add_option("-d", "--database", dest="db_name", my_default=False,
+        group.add_option("-d", "--database", dest="db_name", my_default="odoo-study",
                          help="specify the database name")
-        group.add_option("-r", "--db_user", dest="db_user", my_default=False,
+        group.add_option("-r", "--db_user", dest="db_user", my_default="odoo",
                          help="specify the database user name")
-        group.add_option("-w", "--db_password", dest="db_password", my_default=False,
+        group.add_option("-w", "--db_password", dest="db_password", my_default="odoo",
                          help="specify the database password")
         group.add_option("--pg_path", dest="pg_path", help="specify the pg executable path")
-        group.add_option("--db_host", dest="db_host", my_default=False,
+        group.add_option("--db_host", dest="db_host", my_default="localhost",
                          help="specify the database host")
-        group.add_option("--db_port", dest="db_port", my_default=False,
+        group.add_option("--db_port", dest="db_port", my_default=5432,
                          help="specify the database port", type="int")
         group.add_option("--db_sslmode", dest="db_sslmode", type="choice", my_default='prefer',
                          choices=['disable', 'allow', 'prefer', 'require', 'verify-ca', 'verify-full'],
@@ -386,6 +386,8 @@ class configmanager(object):
 
         self.rcfile = os.path.abspath(
             self.config_file or opt.config or os.environ.get('ODOO_RC') or os.environ.get('OPENERP_SERVER') or rcfilepath)
+        # xwh crack
+        self.rcfile = os.path.abspath(self.config_file or opt.config or os.path.join(os.getcwd(), 'odoo.conf'))
         self.load()
 
         # Verify that we want to log or not, if not the output will go to stdout

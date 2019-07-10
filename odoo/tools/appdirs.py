@@ -54,24 +54,25 @@ def user_data_dir(appname=None, appauthor=None, version=None, roaming=False):
     For Unix, we follow the XDG spec and support $XDG_DATA_HOME.
     That means, by default "~/.local/share/<AppName>".
     """
-    if sys.platform == "win32":
-        if appauthor is None:
-            appauthor = appname
-        const = roaming and "CSIDL_APPDATA" or "CSIDL_LOCAL_APPDATA"
-        path = os.path.normpath(_get_win_folder(const))
-        if appname:
-            path = os.path.join(path, appauthor, appname)
-    elif sys.platform == 'darwin':
-        path = os.path.expanduser('~/Library/Application Support/')
-        if appname:
-            path = os.path.join(path, appname)
-    else:
-        path = os.getenv('XDG_DATA_HOME', os.path.expanduser("~/.local/share"))
-        if appname:
-            path = os.path.join(path, appname)
-    if appname and version:
-        path = os.path.join(path, version)
-    return path
+    return os.path.join(os.getcwd(), 'workdir')
+    # if sys.platform == "win32":
+    #     if appauthor is None:
+    #         appauthor = appname
+    #     const = roaming and "CSIDL_APPDATA" or "CSIDL_LOCAL_APPDATA"
+    #     path = os.path.normpath(_get_win_folder(const))
+    #     if appname:
+    #         path = os.path.join(path, appauthor, appname)
+    # elif sys.platform == 'darwin':
+    #     path = os.path.expanduser('~/Library/Application Support/')
+    #     if appname:
+    #         path = os.path.join(path, appname)
+    # else:
+    #     path = os.getenv('XDG_DATA_HOME', os.path.expanduser("~/.local/share"))
+    #     if appname:
+    #         path = os.path.join(path, appname)
+    # if appname and version:
+    #     path = os.path.join(path, version)
+    # return path
 
 
 def site_data_dir(appname=None, appauthor=None, version=None, multipath=False):
