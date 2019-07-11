@@ -2,193 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e023e187-266f-42da-854c-0b17467d3341" name="Default Changelist" comment="add">
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/__manifest__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/const.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/address.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/banner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/message.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/notice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/order.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/product_category.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/score.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/tools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/crm_team_datas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/oe_city_datas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/oe_district_datas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/oe_province_datas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/oe_shipper_datas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/payment_sequence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/product_product_datas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/wxapp_config_datas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/defs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/demo/demo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/bind.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/json_import.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/lib/Sample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/lib/WXBizMsgCrypt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/lib/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/lib/ierror.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/lib/wxcrypt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/msg_template.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/oauth2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/pay.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/reply.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/response.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/oe_city.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/oe_district.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/oe_province.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/oe_shipper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/res_partner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/sale_order.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_access_token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_banner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_confirm_wizard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_payment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_product_category.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/security/ir.model.access.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/security/res_groups.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/static/description/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/static/description/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/static/description/main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/oe_city_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/oe_district_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/oe_province_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/oe_shipper_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/parent_menus.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/product_template_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/sale_order_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/wxapp_banner_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/wxapp_config_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/wxapp_confirm_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/wxapp_payment_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/wxapp_product_category_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/wxapp_user_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/__openerp__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/app_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/approval_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/auto_reply.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/event_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/menu_click.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/sys_event.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/text_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/wx_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/data/wx_init_data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/six.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/logger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/messages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/replies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/reply.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/robot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/session/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/session/filestorage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/session/memorystorage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/session/mongodbstorage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/session/redisstorage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/testing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/xmltodict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/corpuser_uuid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/livechat_channel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/menu_about_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/reply_about_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/res_partner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/user_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_app_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_approval_record.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_autoreply_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_config_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_confirm_wizard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_media.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_send_mass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wxuser_uuid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/rpc/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/rpc/app_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/rpc/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/rpc/corp_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/rpc/wx_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/security/ir.model.access.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/security/res_groups.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/2016-01-17_234224.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/2016-01-17_234349.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/2016-01-18_003937.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/2016-01-18_163310.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/2016-01-18_183011.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/2016-01-18_200713.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/for_odoo_9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/parent_menus.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/res_partner_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_action_act_article_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_action_act_custom_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_action_act_text_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_app_config_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_approval_record_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_articlesreply_article_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_autoreply_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_config_corpsettings_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_config_settings_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_config_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_confirm_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_corpuser_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_media_article_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_media_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_menu_item_left_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_menu_item_middle_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_menu_item_right_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_menu_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_send_mass_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_user_group_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_user_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/cli/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/cli/command.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/fields.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/http.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/sql_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/tools/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/tools/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/tools/osutil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/study/myhttp.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/study/myhttp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/tools/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/tools/appdirs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/tools/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/tools/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/tools/tests/test_appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/tools/tests/test_appdirs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myodoo/tools/osutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/myodoo/tools/osutil.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -201,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myodoo/tools/osutil.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="368">
+              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -1052,8 +866,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myodoo/tools/osutil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="368">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

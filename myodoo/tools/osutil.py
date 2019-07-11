@@ -30,12 +30,14 @@ def walksymlinks(top, topdown=True, onerror=None):
         if not topdown:
             yield dirpath, dirnames, filenames
 
+
 def tempdir():
     tmpdir = tempfile.mkdtemp()
     try:
-        yield  tmpdir
+        yield tmpdir
     finally:
         shutil.rmtree(tmpdir)
+
 
 def zip_dir(path, stream, include_dir=True, fnct_sort=None):
     path = os.path.normpath(path)
