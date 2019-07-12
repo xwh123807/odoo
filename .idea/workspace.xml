@@ -1,194 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e023e187-266f-42da-854c-0b17467d3341" name="Default Changelist" comment="add">
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/__manifest__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/const.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/address.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/banner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/message.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/notice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/order.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/product_category.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/score.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/tools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/controllers/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/crm_team_datas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/oe_city_datas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/oe_district_datas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/oe_province_datas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/oe_shipper_datas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/payment_sequence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/product_product_datas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/data/wxapp_config_datas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/defs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/demo/demo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/bind.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/json_import.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/lib/Sample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/lib/WXBizMsgCrypt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/lib/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/lib/ierror.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/lib/wxcrypt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/msg_template.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/oauth2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/pay.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/reply.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/ext_libs/weixin/response.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/oe_city.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/oe_district.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/oe_province.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/oe_shipper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/res_partner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/sale_order.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_access_token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_banner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_confirm_wizard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_payment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_product_category.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/security/ir.model.access.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/security/res_groups.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/static/description/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/static/description/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/static/description/main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/oe_city_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/oe_district_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/oe_province_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/oe_shipper_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/parent_menus.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/product_template_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/sale_order_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/wxapp_banner_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/wxapp_config_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/wxapp_confirm_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/wxapp_payment_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/wxapp_product_category_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_weshop/views/wxapp_user_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/__openerp__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/app_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/approval_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/auto_reply.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/event_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/menu_click.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/sys_event.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/handlers/text_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/controllers/wx_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/data/wx_init_data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/six.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/logger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/messages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/replies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/reply.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/robot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/session/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/session/filestorage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/session/memorystorage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/session/mongodbstorage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/session/redisstorage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/testing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/werobot/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/ext_libs/xmltodict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/corpuser_uuid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/livechat_channel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/menu_about_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/reply_about_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/res_partner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/user_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_app_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_approval_record.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_autoreply_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_config_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_confirm_wizard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_media.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wx_send_mass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/models/wxuser_uuid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/rpc/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/rpc/app_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/rpc/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/rpc/corp_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/rpc/wx_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/security/ir.model.access.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/security/res_groups.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/2016-01-17_234224.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/2016-01-17_234349.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/2016-01-18_003937.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/2016-01-18_163310.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/2016-01-18_183011.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/2016-01-18_200713.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/for_odoo_9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/static/description/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/parent_menus.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/res_partner_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_action_act_article_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_action_act_custom_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_action_act_text_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_app_config_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_approval_record_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_articlesreply_article_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_autoreply_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_config_corpsettings_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_config_settings_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_config_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_confirm_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_corpuser_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_media_article_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_media_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_menu_item_left_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_menu_item_middle_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_menu_item_right_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_menu_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_send_mass_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_user_group_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaddons/oejia_wx/views/wx_user_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/cli/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/cli/command.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/fields.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/http.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/sql_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/tools/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/tools/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/tools/osutil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="7db8f1a4-d8c5-4c09-ba69-a4b9c75796e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/study/myhttp.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/study/myhttp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/tools/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/tools/appdirs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/tools/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/tools/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/tools/tests/test_appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/tools/tests/test_appdirs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myodoo/tools/sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/myodoo/tools/sql.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -197,20 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myodoo/tools/osutil.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -234,10 +37,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/study/employee.py" />
-        <option value="$PROJECT_DIR$/study/inherit.py" />
-        <option value="$PROJECT_DIR$/odoo/models.py" />
-        <option value="$PROJECT_DIR$/odoo/cli/shell.py" />
         <option value="$PROJECT_DIR$/odoo/modules/registry.py" />
         <option value="$PROJECT_DIR$/myfly/cli.py" />
         <option value="$PROJECT_DIR$/myfly-bin.py" />
@@ -276,7 +75,6 @@
         <option value="$PROJECT_DIR$/odoo/tools/config.py" />
         <option value="$PROJECT_DIR$/odoo/study/myhttp.py" />
         <option value="$PROJECT_DIR$/myodoo/__init__.py" />
-        <option value="$PROJECT_DIR$/myodoo/tools/__init__.py" />
         <option value="$PROJECT_DIR$/myodoo/tools/config.py" />
         <option value="$PROJECT_DIR$/myodoo/cli/command.py" />
         <option value="$PROJECT_DIR$/myodoo/api.py" />
@@ -285,13 +83,18 @@
         <option value="$PROJECT_DIR$/myodoo/sql_db.py" />
         <option value="$PROJECT_DIR$/myodoo/fields.py" />
         <option value="$PROJECT_DIR$/myodoo/tools/osutil.py" />
+        <option value="$PROJECT_DIR$/myodoo/tools/__init__.py" />
+        <option value="$PROJECT_DIR$/myodoo/tools/lru.py" />
+        <option value="$PROJECT_DIR$/myodoo/tools/tests/test_lru.py" />
+        <option value="$PROJECT_DIR$/myodoo/tools/pycompat.py" />
+        <option value="$PROJECT_DIR$/myodoo/tools/sql.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="646" />
-    <option name="width" value="634" />
-    <option name="height" value="800" />
+    <option name="x" value="1221" />
+    <option name="width" value="827" />
+    <option name="height" value="1152" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -319,6 +122,24 @@
               <item name="myodoo" type="462c0819:PsiDirectoryNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="myodoo" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -330,7 +151,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/myaddons" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -352,7 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.command">
+  <component name="RunManager" selected="Python tests.Unittests for test_lru.TestLRU.test_LRUNode">
     <configuration name="command" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="odoo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -458,65 +279,65 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for myhttp.TestHttp.test_readCompany" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_lru.TestLRU.test_LRU" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="odoo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/odoo/study" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myodoo/tools/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;myhttp.TestHttp.test_readCompany&quot;" />
+      <option name="_new_target" value="&quot;test_lru.TestLRU.test_LRU&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for myhttp.TestHttp.test_readUser" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_lru.TestLRU.test_LRUNode" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="odoo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/odoo/study" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myodoo/tools/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;myhttp.TestHttp.test_readUser&quot;" />
+      <option name="_new_target" value="&quot;test_lru.TestLRU.test_LRUNode&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for myhttp.TestHttp.test_search_read" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_lru.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="odoo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/odoo/study" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myodoo/tools/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;myhttp.TestHttp.test_search_read&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/myodoo/tools/tests/test_lru.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.http" />
       <item itemvalue="Python.odoo-bin-shell" />
       <item itemvalue="Python.odoo-bin" />
-      <item itemvalue="Python tests.Unittests for myhttp.TestHttp.test_search_read" />
-      <item itemvalue="Python tests.Unittests for myhttp.TestHttp.test_readUser" />
-      <item itemvalue="Python tests.Unittests for myhttp.TestHttp.test_readCompany" />
       <item itemvalue="Python.myfly-bin" />
       <item itemvalue="Python.command" />
+      <item itemvalue="Python tests.Unittests for test_lru.TestLRU.test_LRUNode" />
+      <item itemvalue="Python tests.Unittests in test_lru.py" />
+      <item itemvalue="Python tests.Unittests for test_lru.TestLRU.test_LRU" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_lru.py" />
+        <item itemvalue="Python tests.Unittests for test_lru.TestLRU.test_LRU" />
+        <item itemvalue="Python tests.Unittests for test_lru.TestLRU.test_LRUNode" />
         <item itemvalue="Python.command" />
         <item itemvalue="Python.myfly-bin" />
-        <item itemvalue="Python tests.Unittests for myhttp.TestHttp.test_readUser" />
-        <item itemvalue="Python tests.Unittests for myhttp.TestHttp.test_readCompany" />
-        <item itemvalue="Python tests.Unittests for myhttp.TestHttp.test_search_read" />
       </list>
     </recent_temporary>
   </component>
@@ -548,39 +369,60 @@
       <option name="project" value="LOCAL" />
       <updated>1552647771509</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add">
+      <created>1562767921930</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562767921930</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add">
+      <created>1562774412844</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1562774412844</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add">
+      <created>1562844583797</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1562844583797</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_myhttp_TestHttp_test_readUser - 2019.05.10 at 14h 09m 18s.xml">
-      <configuration name="Unittests for myhttp.TestHttp.test_readUser" configurationId="tests" />
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 04m 42s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_myhttp_TestHttp_test_readUser - 2019.05.10 at 14h 09m 36s.xml">
-      <configuration name="Unittests for myhttp.TestHttp.test_readUser" configurationId="tests" />
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 05m 05s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_myhttp_TestHttp_test_readUser - 2019.05.10 at 14h 09m 57s.xml">
-      <configuration name="Unittests for myhttp.TestHttp.test_readUser" configurationId="tests" />
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 09m 05s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_myhttp_TestHttp_test_readCompany - 2019.05.10 at 14h 10m 02s.xml">
-      <configuration name="Unittests for myhttp.TestHttp.test_readCompany" configurationId="tests" />
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 13m 14s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_myhttp_TestHttp_test_readCompany - 2019.05.10 at 14h 10m 21s.xml">
-      <configuration name="Unittests for myhttp.TestHttp.test_readCompany" configurationId="tests" />
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 16m 04s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_myhttp_TestHttp_test_readCompany - 2019.05.10 at 14h 10m 33s.xml">
-      <configuration name="Unittests for myhttp.TestHttp.test_readCompany" configurationId="tests" />
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 19m 01s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_myhttp_TestHttp_test_readCompany - 2019.05.10 at 14h 10m 51s.xml">
-      <configuration name="Unittests for myhttp.TestHttp.test_readCompany" configurationId="tests" />
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 27m 36s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_myhttp_TestHttp_test_readUser - 2019.05.10 at 14h 10m 56s.xml">
-      <configuration name="Unittests for myhttp.TestHttp.test_readUser" configurationId="tests" />
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 37m 19s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_myhttp_TestHttp_test_readUser - 2019.05.10 at 14h 11m 55s.xml">
-      <configuration name="Unittests for myhttp.TestHttp.test_readUser" configurationId="tests" />
+    <history-entry file="Unittests_in_test_lru_py - 2019.07.10 at 21h 41m 12s.xml">
+      <configuration name="Unittests in test_lru.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_myhttp_TestHttp_test_readUser - 2019.07.04 at 09h 26m 42s.xml">
-      <configuration name="Unittests for myhttp.TestHttp.test_readUser" configurationId="tests" />
+    <history-entry file="Unittests_in_test_lru_py - 2019.07.10 at 21h 41m 56s.xml">
+      <configuration name="Unittests in test_lru.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -593,21 +435,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="646" y="0" width="634" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="936" y="0" width="1112" height="1152" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.21705426" weight="0.22675367" />
-      <window_info id="Structure" order="1" sideWeight="0.78294575" side_tool="true" weight="0.22716442" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7537747" visible="true" weight="0.2749771" />
+      <window_info id="Structure" order="1" sideWeight="0.24622531" side_tool="true" visible="true" weight="0.2749771" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2931507" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32809612" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27726433" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32876712" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.26438355" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2042514" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -662,6 +503,11 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>len(self.d)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>result[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -701,69 +547,9 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>res['result1']</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/myaddons/oejia_weshop/controllers/message.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myaddons/oejia_weshop/models/oe_city.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myaddons/oejia_weshop/models/oe_district.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myaddons/oejia_weshop/models/product.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myaddons/oejia_weshop/models/wxapp_payment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myaddons/oejia_weshop/views/oe_district_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myaddons/oejia_weshop/__manifest__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myaddons/oejia_weshop/controllers/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="104" column="11" lean-forward="true" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myaddons/oejia_weshop/controllers/order.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1026" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/web/static/src/js/services/core.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -928,13 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/odoo-bin">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myfly/cli/myshell.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -962,13 +741,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/-1199943126/sys.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/-1199943126/sys.py" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1000,13 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myodoo/tools/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myodoo/api.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1020,26 +786,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myodoo/sql_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myodoo/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/-1199943126/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="340" column="7" lean-forward="true" selection-start-line="340" selection-start-column="7" selection-end-line="340" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/-1199943126/builtins.py" />
     <entry file="file://$PROJECT_DIR$/myodoo/fields.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1050,12 +797,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-bin">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myfly-bin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myodoo/tools/osutil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="120">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/tools/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/tools/tests/test_appdirs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="615" selection-start-line="615" selection-end-line="615" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/tools/tests/test_lru.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/tools/lru.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1074">
+          <caret line="99" column="23" lean-forward="true" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/tools/pycompat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="41" column="6" lean-forward="true" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/sql_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-365">
+          <caret line="215" lean-forward="true" selection-start-line="215" selection-end-line="215" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/tools/sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
