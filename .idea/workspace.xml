@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="7db8f1a4-d8c5-4c09-ba69-a4b9c75796e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myodoo/tools/sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/myodoo/tools/sql.py" afterDir="false" />
+=======
     <list default="true" id="e023e187-266f-42da-854c-0b17467d3341" name="Default Changelist" comment="add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/myodoo/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/myodoo/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myodoo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myodoo/models.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/myodoo/tools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/myodoo/tools/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myodoo/tools/misc.py" beforeDir="false" afterPath="$PROJECT_DIR$/myodoo/tools/misc.py" afterDir="false" />
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +25,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <leaf />
+=======
     <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/odoo/cli/command.py">
@@ -59,6 +74,7 @@
         </entry>
       </file>
     </leaf>
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,6 +98,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/odoo/modules/registry.py" />
+        <option value="$PROJECT_DIR$/myfly/cli.py" />
+=======
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+        <option value="$PROJECT_DIR$/myfly-bin.py" />
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
         <option value="$PROJECT_DIR$/myfly/cli/shell.py" />
         <option value="$PROJECT_DIR$/study/ClassA.py" />
         <option value="$PROJECT_DIR$/study/classA.py" />
@@ -123,6 +148,13 @@
         <option value="$PROJECT_DIR$/myodoo/sql_db.py" />
         <option value="$PROJECT_DIR$/myodoo/fields.py" />
         <option value="$PROJECT_DIR$/myodoo/tools/osutil.py" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/myodoo/tools/__init__.py" />
+        <option value="$PROJECT_DIR$/myodoo/tools/lru.py" />
+        <option value="$PROJECT_DIR$/myodoo/tools/tests/test_lru.py" />
+        <option value="$PROJECT_DIR$/myodoo/tools/pycompat.py" />
+        <option value="$PROJECT_DIR$/myodoo/tools/sql.py" />
+=======
         <option value="$PROJECT_DIR$/myodoo/tools/cache.py" />
         <option value="$PROJECT_DIR$/myodoo/tools/which.py" />
         <option value="$PROJECT_DIR$/myodoo/tools/__init__.py" />
@@ -130,16 +162,20 @@
         <option value="$PROJECT_DIR$/myodoo/tools/misc.py" />
         <option value="$PROJECT_DIR$/myodoo/tools/tests/test_misc.py" />
         <option value="$PROJECT_DIR$/odoo/tools/tests/test_misc.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/myodoo/tests/test_api.py" />
         <option value="$PROJECT_DIR$/myodoo/api.py" />
         <option value="$PROJECT_DIR$/myodoo/models.py" />
+=======
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="646" />
-    <option name="width" value="634" />
-    <option name="height" value="800" />
+    <option name="x" value="1221" />
+    <option name="width" value="827" />
+    <option name="height" value="1152" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -161,6 +197,43 @@
               <item name="odoo" type="462c0819:PsiDirectoryNode" />
               <item name="myodoo" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="myodoo" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="myodoo" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
           </expand>
           <select />
         </subPane>
@@ -194,7 +267,36 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.odoo-bin">
+=======
+<<<<<<< HEAD
+  <component name="RunManager" selected="Python tests.Unittests for test_lru.TestLRU.test_LRUNode">
+    <configuration name="command" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="odoo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myodoo/cli" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myodoo/cli/command.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+=======
+  <component name="RunManager" selected="Python tests.Unittests for test_misc.TestMisc.test_exec_pg_command">
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
     <configuration name="http" type="PythonConfigurationType" factoryName="Python">
       <module name="odoo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -258,46 +360,115 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="Unittests for test_api.TestApi.testParams" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+=======
+<<<<<<< HEAD
+    <configuration name="Unittests for test_lru.TestLRU.test_LRU" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="Unittests for test_misc.TestMisc.test__exec_pipe" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
       <module name="odoo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myodoo/tests" />
+=======
+<<<<<<< HEAD
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myodoo/tools/tests" />
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/odoo/tools/tests" />
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
+<<<<<<< HEAD
       <option name="_new_target" value="&quot;test_api.TestApi.testParams&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for test_api.TestApi.test_Meta" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+=======
+<<<<<<< HEAD
+      <option name="_new_target" value="&quot;test_lru.TestLRU.test_LRU&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_lru.TestLRU.test_LRUNode" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+=======
+      <option name="_new_target" value="&quot;test_misc.TestMisc.test__exec_pipe&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_misc.TestMisc.test_exec_pg_command" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
       <module name="odoo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myodoo/tests" />
+=======
+<<<<<<< HEAD
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myodoo/tools/tests" />
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/odoo/tools/tests" />
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
+<<<<<<< HEAD
       <option name="_new_target" value="&quot;test_api.TestApi.test_Meta&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for test_misc.TestMisc.test_exec_pg_command" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+=======
+<<<<<<< HEAD
+      <option name="_new_target" value="&quot;test_lru.TestLRU.test_LRUNode&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_lru.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+=======
+      <option name="_new_target" value="&quot;test_misc.TestMisc.test_exec_pg_command&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_misc.TestMisc.test_exec_pipe" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
       <module name="odoo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myodoo/tools/tests" />
+=======
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/odoo/tools/tests" />
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
+<<<<<<< HEAD
       <option name="_new_target" value="&quot;test_misc.TestMisc.test_exec_pg_command&quot;" />
+=======
+<<<<<<< HEAD
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/myodoo/tools/tests/test_lru.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+=======
+      <option name="_new_target" value="&quot;test_misc.TestMisc.test_exec_pipe&quot;" />
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
       <method v="2" />
     </configuration>
     <configuration name="Unittests for tools.tests.test_misc.TestMisc.test_exec_pg_command" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -332,6 +503,27 @@
       <item itemvalue="Python.http" />
       <item itemvalue="Python.odoo-bin-shell" />
       <item itemvalue="Python.odoo-bin" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <item itemvalue="Python.myfly-bin" />
+      <item itemvalue="Python.command" />
+      <item itemvalue="Python tests.Unittests for test_lru.TestLRU.test_LRUNode" />
+      <item itemvalue="Python tests.Unittests in test_lru.py" />
+      <item itemvalue="Python tests.Unittests for test_lru.TestLRU.test_LRU" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests in test_lru.py" />
+        <item itemvalue="Python tests.Unittests for test_lru.TestLRU.test_LRU" />
+        <item itemvalue="Python tests.Unittests for test_lru.TestLRU.test_LRUNode" />
+        <item itemvalue="Python.command" />
+        <item itemvalue="Python.myfly-bin" />
+=======
+      <item itemvalue="Python tests.Unittests for test_misc.TestMisc.test__exec_pipe" />
+      <item itemvalue="Python tests.Unittests for test_misc.TestMisc.test_exec_pipe" />
+      <item itemvalue="Python tests.Unittests in test_misc.py" />
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
       <item itemvalue="Python tests.Unittests for tools.tests.test_misc.TestMisc.test_exec_pg_command" />
       <item itemvalue="Python tests.Unittests for test_misc.TestMisc.test_exec_pg_command" />
       <item itemvalue="Python tests.Unittests in test_api.py" />
@@ -345,6 +537,13 @@
         <item itemvalue="Python tests.Unittests for test_api.TestApi.test_Meta" />
         <item itemvalue="Python tests.Unittests for test_misc.TestMisc.test_exec_pg_command" />
         <item itemvalue="Python tests.Unittests for tools.tests.test_misc.TestMisc.test_exec_pg_command" />
+<<<<<<< HEAD
+=======
+        <item itemvalue="Python tests.Unittests in test_misc.py" />
+        <item itemvalue="Python tests.Unittests for test_misc.TestMisc.test_exec_pipe" />
+        <item itemvalue="Python tests.Unittests for test_misc.TestMisc.test__exec_pipe" />
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
       </list>
     </recent_temporary>
   </component>
@@ -377,6 +576,61 @@
       <updated>1552647771509</updated>
     </task>
     <task id="LOCAL-00003" summary="add">
+<<<<<<< HEAD
+      <created>1562767921930</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562767921930</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add">
+      <created>1562774412844</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1562774412844</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add">
+      <created>1562844583797</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1562844583797</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 04m 42s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 05m 05s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 09m 05s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 13m 14s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 16m 04s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 19m 01s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 27m 36s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_lru_TestLRU_test_LRU - 2019.07.10 at 21h 37m 19s.xml">
+      <configuration name="Unittests for test_lru.TestLRU.test_LRU" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_lru_py - 2019.07.10 at 21h 41m 12s.xml">
+      <configuration name="Unittests in test_lru.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_lru_py - 2019.07.10 at 21h 41m 56s.xml">
+      <configuration name="Unittests in test_lru.py" configurationId="tests" />
+=======
       <created>1562811683078</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
@@ -428,8 +682,14 @@
     <history-entry file="Unittests_in_test_api_py - 2019.07.11 at 15h 19m 12s.xml">
       <configuration name="Unittests in test_api.py" configurationId="tests" />
     </history-entry>
+<<<<<<< HEAD
     <history-entry file="Unittests_in_test_api_py - 2019.07.11 at 15h 19m 40s.xml">
       <configuration name="Unittests in test_api.py" configurationId="tests" />
+=======
+    <history-entry file="Unittests_for_tools_tests_test_misc_TestMisc_test_exec_pg_command - 2019.07.11 at 14h 50m 07s.xml">
+      <configuration name="Unittests for tools.tests.test_misc.TestMisc.test_exec_pg_command" configurationId="tests" />
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
     </history-entry>
   </component>
   <component name="TodoView">
@@ -442,20 +702,45 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.21705426" visible="true" weight="0.19459888" />
+=======
+    <frame x="936" y="0" width="1112" height="1152" extended-state="0" />
+    <layout>
+<<<<<<< HEAD
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7537747" visible="true" weight="0.2749771" />
+      <window_info id="Structure" order="1" sideWeight="0.24622531" side_tool="true" visible="true" weight="0.2749771" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32809612" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27726433" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.21705426" visible="true" weight="0.34747145" />
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
       <window_info id="Structure" order="1" sideWeight="0.78294575" side_tool="true" weight="0.22716442" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.26575342" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2931507" />
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32876712" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.9589041" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2042514" />
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -500,6 +785,11 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>len(self.d)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>result[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -539,14 +829,95 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>res['result1']</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/addons/web/static/src/js/services/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+    <entry file="file://$PROJECT_DIR$/addons/web/static/src/js/widgets/notification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/web/static/src/js/services/report_service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/web/static/src/js/services/session.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/functools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/study/myhttp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/tests/web.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/http.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4575">
+          <caret line="340" column="25" selection-start-line="340" selection-start-column="25" selection-end-line="340" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/web/controllers/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13755">
+          <caret line="962" selection-start-line="962" selection-end-line="962" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/tools/pycompat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/service/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
     <entry file="file://$PROJECT_DIR$/odoo/modules/registry.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
@@ -658,13 +1029,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/-1199943126/sys.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/-1199943126/sys.py" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -706,6 +1071,11 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/myodoo/fields.py">
+=======
+<<<<<<< HEAD
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/-1199943126/builtins.py" />
     <entry file="file://$PROJECT_DIR$/myodoo/fields.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -716,6 +1086,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-bin">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
+    <entry file="file://$PROJECT_DIR$/myodoo/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myfly-bin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/tools/osutil.py">
+>>>>>>> 949dd1793c1cb21b6abcbc4f8150432905ff3bfe
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/myodoo/tools/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/tools/tests/test_appdirs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+=======
     <entry file="file://$PROJECT_DIR$/myodoo/sql_db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3065">
@@ -747,8 +1156,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+>>>>>>> da7facfd96851dbe5e78b799be1d25ea6bdbbec5
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="615" selection-start-line="615" selection-end-line="615" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/tools/tests/test_lru.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/tools/lru.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1074">
+          <caret line="99" column="23" lean-forward="true" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/tools/pycompat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="41" column="6" lean-forward="true" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/sql_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-365">
+          <caret line="215" lean-forward="true" selection-start-line="215" selection-end-line="215" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/tools/sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>

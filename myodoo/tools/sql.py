@@ -244,6 +244,8 @@ def drop_index(cr, indexname, tablename):
     :param tablename:
     :return:
     """
+    cr.execute('DROP INDEX IF EXISTS "{}"'.format(indexname))
+    _schema.debug("Table %r: dropped index %r", tablename, indexname)
 
 
 def drop_view_if_exists(cr, viewname):
@@ -253,3 +255,4 @@ def drop_view_if_exists(cr, viewname):
     :param viewname:
     :return:
     """
+    cr.execute('DROP VIEW IF EXISTS %s CASCADE' % (viewname, ))
