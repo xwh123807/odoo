@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e023e187-266f-42da-854c-0b17467d3341" name="Default Changelist" comment="add">
-      <change afterPath="$PROJECT_DIR$/myodoo/tools/tests/test_misc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myodoo/tools/tests/test_which.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odoo/tools/tests/test_misc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myodoo/tools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/myodoo/tools/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myodoo/tools/misc.py" beforeDir="false" afterPath="$PROJECT_DIR$/myodoo/tools/misc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myodoo/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/myodoo/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myodoo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myodoo/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,24 +15,47 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myodoo/tools/tests/test_misc.py">
+        <entry file="file://$PROJECT_DIR$/odoo/cli/command.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="40" />
+            <state relative-caret-position="68">
+              <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myodoo/api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2550">
+              <caret line="150" column="15" selection-start-line="150" selection-start-column="15" selection-end-line="150" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/odoo/tools/tests/test_misc.py">
+        <entry file="file://$PROJECT_DIR$/myodoo/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="31">
+              <caret line="236" column="34" selection-start-line="236" selection-start-column="34" selection-end-line="236" selection-end-column="34" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/odoo/cli/server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/odoo/cli/deploy.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -62,7 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/myfly-bin.py" />
         <option value="$PROJECT_DIR$/myfly/cli/shell.py" />
         <option value="$PROJECT_DIR$/study/ClassA.py" />
         <option value="$PROJECT_DIR$/study/classA.py" />
@@ -100,9 +119,7 @@
         <option value="$PROJECT_DIR$/myodoo/__init__.py" />
         <option value="$PROJECT_DIR$/myodoo/tools/config.py" />
         <option value="$PROJECT_DIR$/myodoo/cli/command.py" />
-        <option value="$PROJECT_DIR$/myodoo/api.py" />
         <option value="$PROJECT_DIR$/myodoo/http.py" />
-        <option value="$PROJECT_DIR$/myodoo/models.py" />
         <option value="$PROJECT_DIR$/myodoo/sql_db.py" />
         <option value="$PROJECT_DIR$/myodoo/fields.py" />
         <option value="$PROJECT_DIR$/myodoo/tools/osutil.py" />
@@ -113,6 +130,9 @@
         <option value="$PROJECT_DIR$/myodoo/tools/misc.py" />
         <option value="$PROJECT_DIR$/myodoo/tools/tests/test_misc.py" />
         <option value="$PROJECT_DIR$/odoo/tools/tests/test_misc.py" />
+        <option value="$PROJECT_DIR$/myodoo/tests/test_api.py" />
+        <option value="$PROJECT_DIR$/myodoo/api.py" />
+        <option value="$PROJECT_DIR$/myodoo/models.py" />
       </list>
     </option>
   </component>
@@ -141,37 +161,6 @@
               <item name="odoo" type="462c0819:PsiDirectoryNode" />
               <item name="myodoo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="myodoo" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="myodoo" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -183,7 +172,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/myaddons" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -205,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_misc.TestMisc.test_exec_pg_command">
+  <component name="RunManager" selected="Python.odoo-bin">
     <configuration name="http" type="PythonConfigurationType" factoryName="Python">
       <module name="odoo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -269,17 +258,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_misc.TestMisc.test__exec_pipe" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_api.TestApi.testParams" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="odoo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/odoo/tools/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myodoo/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_misc.TestMisc.test__exec_pipe&quot;" />
+      <option name="_new_target" value="&quot;test_api.TestApi.testParams&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_api.TestApi.test_Meta" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="odoo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myodoo/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.TestApi.test_Meta&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -297,20 +300,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_misc.TestMisc.test_exec_pipe" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="odoo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/odoo/tools/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_misc.TestMisc.test_exec_pipe&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests for tools.tests.test_misc.TestMisc.test_exec_pg_command" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="odoo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -325,17 +314,17 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_misc.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_api.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="odoo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/odoo/tools/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myodoo/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/odoo/tools/tests/test_misc.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/myodoo/tests/test_api.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -343,19 +332,19 @@
       <item itemvalue="Python.http" />
       <item itemvalue="Python.odoo-bin-shell" />
       <item itemvalue="Python.odoo-bin" />
-      <item itemvalue="Python tests.Unittests for test_misc.TestMisc.test__exec_pipe" />
-      <item itemvalue="Python tests.Unittests for test_misc.TestMisc.test_exec_pipe" />
-      <item itemvalue="Python tests.Unittests in test_misc.py" />
       <item itemvalue="Python tests.Unittests for tools.tests.test_misc.TestMisc.test_exec_pg_command" />
       <item itemvalue="Python tests.Unittests for test_misc.TestMisc.test_exec_pg_command" />
+      <item itemvalue="Python tests.Unittests in test_api.py" />
+      <item itemvalue="Python tests.Unittests for test_api.TestApi.test_Meta" />
+      <item itemvalue="Python tests.Unittests for test_api.TestApi.testParams" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_api.py" />
+        <item itemvalue="Python tests.Unittests for test_api.TestApi.testParams" />
+        <item itemvalue="Python tests.Unittests for test_api.TestApi.test_Meta" />
         <item itemvalue="Python tests.Unittests for test_misc.TestMisc.test_exec_pg_command" />
         <item itemvalue="Python tests.Unittests for tools.tests.test_misc.TestMisc.test_exec_pg_command" />
-        <item itemvalue="Python tests.Unittests in test_misc.py" />
-        <item itemvalue="Python tests.Unittests for test_misc.TestMisc.test_exec_pipe" />
-        <item itemvalue="Python tests.Unittests for test_misc.TestMisc.test__exec_pipe" />
       </list>
     </recent_temporary>
   </component>
@@ -394,39 +383,53 @@
       <option name="project" value="LOCAL" />
       <updated>1562811683078</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add">
+      <created>1562827950456</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1562827950456</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add">
+      <created>1562891205142</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1562891205142</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_misc_TestMisc_test__exec_pipe - 2019.07.11 at 13h 59m 33s.xml">
-      <configuration name="Unittests for test_misc.TestMisc.test__exec_pipe" configurationId="tests" />
+    <history-entry file="Unittests_in_test_api_py - 2019.07.11 at 15h 00m 52s.xml">
+      <configuration name="Unittests in test_api.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_misc_TestMisc_test_exec_pipe - 2019.07.11 at 14h 00m 02s.xml">
-      <configuration name="Unittests for test_misc.TestMisc.test_exec_pipe" configurationId="tests" />
+    <history-entry file="Unittests_in_test_api_py - 2019.07.11 at 15h 01m 06s.xml">
+      <configuration name="Unittests in test_api.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_misc_py - 2019.07.11 at 14h 00m 33s.xml">
-      <configuration name="Unittests in test_misc.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_api_py - 2019.07.11 at 15h 03m 18s.xml">
+      <configuration name="Unittests in test_api.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_misc_py - 2019.07.11 at 14h 15m 44s.xml">
-      <configuration name="Unittests in test_misc.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_api_py - 2019.07.11 at 15h 07m 00s.xml">
+      <configuration name="Unittests in test_api.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_misc_py - 2019.07.11 at 14h 19m 43s.xml">
-      <configuration name="Unittests in test_misc.py" configurationId="tests" />
+    <history-entry file="Unittests_for_test_api_TestApi_test_Meta - 2019.07.11 at 15h 17m 28s.xml">
+      <configuration name="Unittests for test_api.TestApi.test_Meta" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_misc_py - 2019.07.11 at 14h 27m 55s.xml">
-      <configuration name="Unittests in test_misc.py" configurationId="tests" />
+    <history-entry file="Unittests_for_test_api_TestApi_testParams - 2019.07.11 at 15h 17m 44s.xml">
+      <configuration name="Unittests for test_api.TestApi.testParams" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_tools_tests_test_misc_TestMisc_test_exec_pg_command - 2019.07.11 at 14h 28m 49s.xml">
-      <configuration name="Unittests for tools.tests.test_misc.TestMisc.test_exec_pg_command" configurationId="tests" />
+    <history-entry file="Unittests_in_test_api_py - 2019.07.11 at 15h 18m 06s.xml">
+      <configuration name="Unittests in test_api.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_tools_tests_test_misc_TestMisc_test_exec_pg_command - 2019.07.11 at 14h 29m 45s.xml">
-      <configuration name="Unittests for tools.tests.test_misc.TestMisc.test_exec_pg_command" configurationId="tests" />
+    <history-entry file="Unittests_in_test_api_py - 2019.07.11 at 15h 18m 50s.xml">
+      <configuration name="Unittests in test_api.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_tools_tests_test_misc_TestMisc_test_exec_pg_command - 2019.07.11 at 14h 29m 59s.xml">
-      <configuration name="Unittests for tools.tests.test_misc.TestMisc.test_exec_pg_command" configurationId="tests" />
+    <history-entry file="Unittests_in_test_api_py - 2019.07.11 at 15h 19m 12s.xml">
+      <configuration name="Unittests in test_api.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_tools_tests_test_misc_TestMisc_test_exec_pg_command - 2019.07.11 at 14h 50m 07s.xml">
-      <configuration name="Unittests for tools.tests.test_misc.TestMisc.test_exec_pg_command" configurationId="tests" />
+    <history-entry file="Unittests_in_test_api_py - 2019.07.11 at 15h 19m 40s.xml">
+      <configuration name="Unittests in test_api.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -439,21 +442,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="646" y="0" width="634" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.21705426" visible="true" weight="0.34747145" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.21705426" visible="true" weight="0.19459888" />
       <window_info id="Structure" order="1" sideWeight="0.78294575" side_tool="true" weight="0.22716442" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2931507" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.26575342" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32876712" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.26438355" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.9589041" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -477,16 +479,6 @@
           <url>file://$PROJECT_DIR$/odoo/http.py</url>
           <line>336</line>
           <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/addons/web/controllers/main.py</url>
-          <line>963</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/addons/web/controllers/main.py</url>
-          <line>959</line>
-          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -555,79 +547,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/addons/web/static/src/js/widgets/notification.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/web/static/src/js/services/report_service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/web/static/src/js/services/session.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/functools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/odoo/study/myhttp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/odoo/tests/web.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/odoo/http.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4575">
-          <caret line="340" column="25" selection-start-line="340" selection-start-column="25" selection-end-line="340" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/web/controllers/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13755">
-          <caret line="962" selection-start-line="962" selection-end-line="962" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/odoo/tools/pycompat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/odoo/service/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1515">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/odoo/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/odoo/modules/registry.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
@@ -712,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/odoo-bin">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myfly/cli/myshell.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -784,9 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myodoo/api.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/myodoo/http.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -794,16 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myodoo/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/-1199943126/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="340" column="7" lean-forward="true" selection-start-line="340" selection-start-column="7" selection-end-line="340" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -921,10 +820,107 @@
     <entry file="file://$PROJECT_DIR$/odoo/tools/tests/test_misc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/service/db.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/service/common.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/service/security.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/service/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-86">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/-1199943126/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="510" column="8" lean-forward="true" selection-start-line="510" selection-start-column="8" selection-end-line="510" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/tests/test_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/tools/sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-621">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-bin">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/web/controllers/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="953" column="26" lean-forward="true" selection-start-line="953" selection-start-column="26" selection-end-line="953" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1383">
+          <caret line="326" column="44" lean-forward="true" selection-start-line="326" selection-start-column="44" selection-end-line="326" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/cli/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/cli/deploy.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/cli/command.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="150" column="15" selection-start-line="150" selection-start-column="15" selection-end-line="150" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myodoo/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="236" column="34" selection-start-line="236" selection-start-column="34" selection-end-line="236" selection-end-column="34" />
         </state>
       </provider>
     </entry>
