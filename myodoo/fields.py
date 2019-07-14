@@ -273,3 +273,42 @@ class Field(MetaField('DummyField', (object,), {})):
 
     def _setup_regular_full(self, model):
         pass
+
+    def _setup_related_full(self, model):
+        pass
+
+    def _traverse_related(self, record):
+        pass
+
+    def _compute_related(self, records):
+        pass
+
+    def _inverse_related(self, records):
+        pass
+
+    def _search_related(self, records, operator, value):
+        pass
+
+    def base_field(self):
+        pass
+
+    def _default_company_dependent(self, model):
+        pass
+
+    def _compute_company_dependent(self, records):
+        pass
+
+    def _inverse_company_dependent(self, records):
+        pass
+
+    def _search_company_dependent(self, records, operator, value):
+        pass
+
+    def resolve_deps(self, model, path0=[], seen=frozenset()):
+        pass
+
+    def setup_triggers(self, model):
+        pass
+
+    def get_description(self, env):
+        pass

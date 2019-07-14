@@ -58,11 +58,15 @@ def split_context(method, args, kwargs):
 
 
 def model(method):
-    pass
+    if method.__name__ == 'create':
+        return model_create_single(method)
+    method._api = 'model'
+    return method
 
 
 def multi(method):
-    pass
+    method._api = 'multi'
+    return method
 
 
 def one(method):
@@ -70,11 +74,13 @@ def one(method):
 
 
 def model_cr(method):
-    pass
+    method._api = 'model_cr'
+    return method
 
 
 def model_cr_context(method):
-    pass
+    method._api = 'model_cr_context'
+    return method
 
 
 def _model_create_single(create, self, arg):

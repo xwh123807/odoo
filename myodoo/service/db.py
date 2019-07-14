@@ -1,18 +1,35 @@
+from decorator import decorator
+from contextlib import closing
+import myodoo
+import myodoo.tools.config
+from myodoo.exceptions import AccessDenied
+
+
 class DatabaseExists(Warning):
     pass
 
 
 def check_db_management_enabled(method):
-    pass
+    def if_db_mgt_enabled(method, self, *args, **kwargs):
+        if not myodoo.tools.config['list_db']:
+            raise AccessDenied()
+        return method(self, *args, **kwargs)
+
+    return decorator(if_db_mgt_enabled, method)
 
 
 def check_super(passwd):
-    pass
+    if passwd and myodoo.tools.config.verify_admin_password(passwd):
+        return True
+    raise AccessDenied()
 
 
 def _initialize_db(id, db_name, demo, lang, user_password,
                    login='admin', country_code=None, phone=None):
-    pass
+    try:
+        db = myodoo.sql_db.db_connect(db_name)
+        with closing(db.cursor()) as cr:
+            myodoo.models
 
 
 def _create_empty_database(name):
