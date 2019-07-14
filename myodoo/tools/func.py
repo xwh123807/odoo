@@ -42,7 +42,7 @@ def compose(a, b):
 
 class _ClassProperty(property):
     def __get__(self, instance, owner):
-        pass
+        return self.fget.__get__(None, owner)()
 
 
 def classproperty(func):
